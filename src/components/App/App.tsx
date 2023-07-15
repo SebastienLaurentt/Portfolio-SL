@@ -1,9 +1,12 @@
-
+import Header from "../Header";
+import headerCategory from "../../data/headerCategory";
 
 function App() {
   return (
     <div className="App">
-      <p className="">blabla</p>
+      <>
+        <Header headerCategory={headerCategory}/>
+      </>
     </div>
   );
 }
