@@ -1,12 +1,9 @@
-import Header from "../Header";
-import headerCategory from "../../data/headerCategory";
+import Home from "../Sections/Home";
 
 function App() {
   return (
     <div className="App">
-      <>
-        <Header headerCategory={headerCategory}/>
-      </>
+      <Home/>
     </div>
   );
 }
