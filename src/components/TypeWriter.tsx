@@ -8,10 +8,10 @@ function TypeWriterText () {
           loop: true,
         }}
           onInit={(typewriter) => {
-            typewriter.typeString('<span>From <span class="text-1">Researcher</span> to <span class="text-1">Web Developer</span></span>')
+            typewriter.typeString('<span class="text-2xl"">From Researcher to Web Developer</span>')
             .pauseFor(2000)
             .deleteAll()
-            .typeString('<span>Welcome to my <span class="text-1">journey</span></span>')
+            .typeString('<span <span class="text-2xl""> Welcome to my journey</span>')
             .pauseFor(2000)
             .deleteAll()
             .start()

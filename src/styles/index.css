@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
+  html {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* h1 {
     @apply text-2xl font-semibold mb-6;
   }
 
@@ -25,5 +29,5 @@
 
   strong {
     @apply font-semibold;
-  }
+  } */
 }

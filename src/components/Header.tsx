@@ -7,16 +7,16 @@ interface HeaderProps {
   
   function Header({headerCategory}: HeaderProps) {
     return (
-      <header className="flex flex-row justify-between p-6 bg-blue-800">
+      <header className="flex flex-row justify-between p-6 text-white text-lg">
         <div className="">
-            <span>Sébastien Laurent</span>
-            <span> Web Developer</span>
+            <span>Sébastien Laurent -</span>
+            <span className="font-bold text-cyan-400"> Web Developer</span>
         </div>
-        <nav className="mr-8">
+        <nav className="">
             <ul className="flex flex-row">
                 {headerCategory.map((headerCategory) => {
                         return (
-                            <li className="px-4">
+                            <li className="px-4 hover:text-cyan-400">
                                 <a className="" href={headerCategory.route} key = {headerCategory.label}>
                                 {headerCategory.label}
                                 </a>
