@@ -1,14 +1,16 @@
+import TitleSection from "../components/TitleSection";
 
-function Experiences () {
+
+function Projects () {
     return (
-    <section className="bg-gradient-to-t from-slate-900 to-gray-700 min-h-screen p-8">
-        <h2 className="bg-gradient-to-r from-teal-700 to-cyan-400 bg-clip-text text-transparent text-center text-3xl">Experiences</h2>
+    <section className="bg-gradient-to-bl from-slate-900 to-gray-700 min-h-screen p-8">
+        <TitleSection titleContent="Projects" />
         <div className="flex flex-row justify-between mt-4">
-            <button className="bg-gradient-to-r from-teal-700 to-cyan-400 text-white flex flex-col p-2 rounded-lg ">
+            <button className="bg-gradient-to-r from-teal-700 to-cyan-400 text-white flex flex-col p-2 rounded-lg">
                 <span>PhD Student</span>
                 <span>2017 - 2021</span>
             </button>
-            <button className="bg-gradient-to-r from-teal-700 to-cyan-400 text-white flex flex-col p-2 rounded-lg ">
+            <button className="bg-gradient-to-r from-teal-700 to-cyan-400 text-white flex flex-col p-2 rounded-lg  text-center">
                 <span>Post Doc</span>
                 <span>2021 - 2022</span>
             </button>
@@ -31,4 +33,4 @@ function Experiences () {
     </section>
     );
   }
-export default Experiences;
+export default Projects;
