@@ -12,7 +12,7 @@ function Home() {
       <section className="p-4">
         <div className=" text-white w-full text-center mt-20 mb-8">
           <span className="block text-3xl"> Welcome ! </span>
-          <span className=" block bg-gradient-to-r from-teal-700 to-cyan-400 bg-clip-text text-transparent text-4xl mb-4">
+          <span className=" block text-emerald-500  text-4xl mb-4">
             {' '}
             I'm Sébastien
           </span>
