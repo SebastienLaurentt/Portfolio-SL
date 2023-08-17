@@ -12,19 +12,36 @@ import headerCategory from '../data/headerCategory';
     return (
       <header className="flex flex-row justify-between p-6 text-white text-lg">
         <div className="">
-            <span>SL -</span>
+            <span className="">SL -</span>
             <span className="font-bold text-cyan-400"> Web Developer</span>
         </div>
-        <div>
-        <IoMdMenu
-          size={32}
-          className={'cursor-pointer'}
-          onClick={() => {
-            setBurgerIsOpen(true);
-          }}
-        />
-      </div>
-      {burgerIsOpen && <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} headerCategory={headerCategory}/>}
+        <div className="md:hidden">
+          <IoMdMenu
+            size={32}
+            className={'cursor-pointer'}
+            onClick={() => {
+              setBurgerIsOpen(true);
+            }}
+          />
+        </div>
+      <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen} headerCategory={headerCategory}/>
+        <ul
+          className=" hidden md:flex text-slate-900   gap-6 text-center text-xl"
+
+        >
+          <li className='text-white '>
+            Home
+          </li>
+          <li className='text-white'>
+            Experiences
+          </li>
+          <li className='text-white'>
+            Projects
+          </li>
+          <li className='text-white'>
+            Contact
+          </li>
+        </ul>
       </header>
     );
   }

@@ -1,10 +1,7 @@
-import TitleSection from "../components/TitleSection";
-
-
 function Projects () {
     return (
     <section className="bg-gradient-to-bl from-slate-900 to-gray-700 min-h-screen p-8">
-        <TitleSection titleContent="Projects" />
+        <h2>Projects</h2>
         <div className="flex flex-row justify-center mt-4">
             <button className="bg-gradient-to-r from-teal-700 to-cyan-400 text-white flex flex-col p-2 rounded-lg">
                 <span>Codit</span>

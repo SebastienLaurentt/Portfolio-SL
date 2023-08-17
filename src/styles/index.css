@@ -7,27 +7,35 @@
     font-family: 'Playfair Display', serif;
   }
 
-  /* h1 {
+  h1 {
     @apply text-2xl font-semibold mb-6;
   }
 
   h2 {
-    @apply text-xl font-semibold mb-4;
+    @apply bg-gradient-to-r from-teal-700 to-cyan-400 bg-clip-text text-transparent text-center text-4xl mb-8;
   }
 
   h3 {
-    @apply text-lg font-medium mb-3;
+    @apply text-4xl;
   }
 
   h4 {
-    @apply text-md mb-2;
+    @apply  text-emerald-500 text-3xl mb-4;
+  }
+
+  h5 {
+    @apply  italic mb-8;
   }
 
   p {
-    @apply text-base font-normal mb-4 leading-6;
+    @apply text-lg  mb-4;
+  }
+
+  span {
+    @apply text-base mb-0;
   }
 
   strong {
     @apply font-semibold;
-  } */
+  }
 }
