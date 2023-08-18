@@ -13,7 +13,7 @@ import headerCategory from '../data/headerCategory';
       <header className="flex flex-row justify-between p-6 text-white text-lg">
         <div className="">
             <span className="">SL -</span>
-            <span className="font-bold text-cyan-400"> Web Developer</span>
+            <span className="font-bold text-emerald-500"> Web Developer</span>
         </div>
         <div className="md:hidden">
           <IoMdMenu

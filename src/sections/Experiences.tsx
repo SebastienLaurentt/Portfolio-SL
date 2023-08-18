@@ -16,34 +16,34 @@ function Experiences() {
   if (activeButton === 'PhD Student') {
     sectionContent = (
       <div className="">
-        <h4 className="mb-0">PhD Student</h4>
-        <h5 className="">Gustave Eiffel University</h5>
+        <h3 className="mb-0">PhD Student</h3>
+        <h4 className="">Gustave Eiffel University</h4>
         <p className="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis sunt nobis earum id a dolor eos? Eius odit necessitatibus ab earum error aperiam, maxime ea eveniet sequi et voluptatem ipsa adipisci illo consectetur iusto, cupiditate alias nemo nihil ipsam.
         </p>
-        <img src={brainlogo} alt="" className="mt-4 h-52" />
+        <img src={brainlogo} alt="" className="mt-4 md:mt-8 h-52 md:h-80 mx-auto" />
       </div>
     );
   } else if (activeButton === 'Post Doc') {
     sectionContent = (
       <>
-        <h4 className="mb-0">Post Doc</h4>
-        <h5 className="">Gustave Eiffel University</h5>
+        <h3 className="mb-0">Post Doc</h3>
+        <h4 className="">Gustave Eiffel University</h4>
         <p className="">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis sunt nobis earum id a dolor eos? Eius odit necessitatibus ab earum error aperiam, maxime ea eveniet sequi et voluptatem ipsa adipisci illo consectetur iusto, cupiditate alias nemo nihil ipsam.
         </p>
-        <img src={carlogo} alt="" className="mt-4 h-52" />
+        <img src={carlogo} alt="" className="mt-4 md:mt-8 h-52 md:h-80 mx-auto" />
       </>
     );
   } else if (activeButton === 'Web Dev') {
     sectionContent = (
       <>
-        <h4 className="mb-0">Web Dev</h4>
-        <h5 className="">O'Clock Company</h5>
+        <h3 className="mb-0">Web Dev</h3>
+        <h4 className="">O'Clock Company</h4>
         <p className="">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis sunt nobis earum id a dolor eos? Eius odit necessitatibus ab earum error aperiam, maxime ea eveniet sequi et voluptatem ipsa adipisci illo consectetur iusto, cupiditate alias nemo nihil ipsam.
         </p>
-        <img src={computerlogo} alt="" className="mt-4 h-52" />
+        <img src={computerlogo} alt="" className="mt-4 md:mt-12 h-52 md:h-80 mx-auto" />
       </>
     );
   }
@@ -51,11 +51,11 @@ function Experiences() {
   return (
     <section className="bg-gradient-to-tl from-slate-900 to-gray-700 min-h-screen p-8">
       <h2>Experiences</h2>
-      <div className="flex flex-row justify-between mt-4">
+      <div className="flex flex-row justify-around mt-4 p-4">
         <button
           className={`${
             activeButton === 'PhD Student'
-              ? 'bg-gradient-to-r from-teal-700 to-cyan-400 text-white'
+              ? 'bg-cyan-700 text-white'
               : 'bg-white text-black'
           } flex flex-col p-2 rounded-lg items-center`}
           onClick={() => handleButtonClick('PhD Student')}
@@ -66,7 +66,7 @@ function Experiences() {
         <button
           className={`${
             activeButton === 'Post Doc'
-              ? 'bg-gradient-to-r from-teal-700 to-cyan-400 text-white'
+              ? 'bg-cyan-700 text-white'
               : 'bg-white text-black'
           } flex flex-col p-2 rounded-lg items-center`}
           onClick={() => handleButtonClick('Post Doc')}
@@ -77,7 +77,7 @@ function Experiences() {
         <button
           className={`${
             activeButton === 'Web Dev'
-              ? 'bg-gradient-to-r from-teal-700 to-cyan-400 text-white'
+              ? 'bg-cyan-700 text-white'
               : 'bg-white text-black'
           } flex flex-col p-2 rounded-lg items-center`}
           onClick={() => handleButtonClick('Web Dev')}
@@ -86,7 +86,7 @@ function Experiences() {
           <span>2022 - 2023</span>
         </button>
       </div>
-      <section className="p-4 text-white w-full text-center mt-8 flex flex-col">
+      <section className="p-4 md:p-8  w-full text-center mt-8 flex flex-col">
         {sectionContent}
       </section>
     </section>

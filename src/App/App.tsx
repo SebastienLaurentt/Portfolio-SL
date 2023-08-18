@@ -1,3 +1,4 @@
+import Contact from '../sections/Contact';
 import Experiences from '../sections/Experiences';
 import Home from '../sections/Home';
 import Projects from '../sections/Projects';
@@ -8,6 +9,7 @@ function App() {
       <Home />
       <Experiences />
       <Projects />
+      <Contact />
     </div>
   );
 }
