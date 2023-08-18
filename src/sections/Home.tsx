@@ -27,10 +27,10 @@ function Home() {
         </div>
         
       </section>
-      <div className="text-white text-center mt-4 animate-bounce">
+      <div className="text-white text-center mt-4 md:mt-12 animate-bounce">
         <span className=""> Scroll</span>
         <div className="flex flex-row justify-center">
-          <MdKeyboardDoubleArrowDown size={24} />
+          <MdKeyboardDoubleArrowDown size={28} />
         </div>
       </div>
     </section>

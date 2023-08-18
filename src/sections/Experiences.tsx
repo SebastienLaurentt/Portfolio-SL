@@ -51,7 +51,7 @@ function Experiences() {
   return (
     <section className="bg-gradient-to-tl from-slate-900 to-gray-700 min-h-screen p-8">
       <h2>Experiences</h2>
-      <div className="flex flex-row justify-around mt-4 p-4">
+      <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 mt-4 p-4">
         <button
           className={`${
             activeButton === 'PhD Student'
