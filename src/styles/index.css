@@ -24,7 +24,7 @@
   }
 
   h5 {
-    @apply  text-xl  text-emerald-500;;
+    @apply  text-xl md:text-2xl  text-emerald-500;;
   }
 
   p {
@@ -41,6 +41,10 @@
 
   li {
     @apply text-lg mb-0;
+  }
+
+  a {
+    @apply text-base md:text-lg;
   }
 
   input, textarea {
