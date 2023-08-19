@@ -12,7 +12,7 @@ function Projects () {
         <Carousel>
             {data.map((value) => {
                 return (
-                <SwiperSlide className="" key={value.id}>
+                <SwiperSlide className="mb-12" key={value.id}>
                     <Card 
                     key={value.id}
                     mainImage={value.mainImage}
