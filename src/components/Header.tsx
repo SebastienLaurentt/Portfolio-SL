@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { IoMdMenu } from 'react-icons/io';
 import BurgerMenu from './MenuBurger';
-import headerCategory from '../data/headerCategory';
+
 
   
   function Header() {
@@ -24,7 +24,7 @@ import headerCategory from '../data/headerCategory';
             }}
           />
         </div>
-      <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen} headerCategory={headerCategory}/>
+      <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen}/>
         <ul
           className=" hidden md:flex text-slate-900   gap-6 text-center text-xl"
 

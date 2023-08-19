@@ -10,7 +10,6 @@ function Contact () {
                 label="Name"
                 placeholder="Name"
                 className=""
-                isRequired
                 />
 
                 <input
@@ -18,7 +17,6 @@ function Contact () {
                 label="Username"
                 placeholder="Email"
                 className=""
-                isRequired
                 />
 
                 <input
@@ -26,7 +24,6 @@ function Contact () {
                 label="Name"
                 placeholder="Subject"
                 className=""
-                isRequired
                 />
 
                 
@@ -35,7 +32,6 @@ function Contact () {
                 label="Username"
                 placeholder="Please describe your request"
                 className=""
-                isRequired
                 />
             </div>
 
