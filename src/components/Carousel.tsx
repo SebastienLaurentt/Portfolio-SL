@@ -16,12 +16,19 @@ interface CarouselProps {
 
 function Carousel({ children }: CarouselProps) {
   return (
-    <Swiper
+    <Swiper style={{
+      "--swiper-pagination-bullet-width": "16px",
+      "--swiper-pagination-bullet-height": "8px",
+      "--swiper-pagination-bullet-border-radius": "30%",
+      "--swiper-pagination-color": "#22d3ee",
+      "--swiper-pagination-bullet-size": "8px",
+      "--swiper-pagination-bullet-horizontal-gap": "6px"
+    }}
       slidesPerView={1}
       spaceBetween={16}
       loop={false}
       centeredSlides={false}
-      pagination={true}
+      pagination={{ clickable: true }}
       breakpoints={{
         390: { slidesPerView: 1.0, spaceBetween: 8 },
         768: { slidesPerView: 2.0, spaceBetween: 8 },
