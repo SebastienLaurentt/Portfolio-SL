@@ -9,7 +9,7 @@ function Home() {
   return (
     <section className="bg-gradient-to-bl from-slate-900 to-gray-700 min-h-screen p-8">
       <Header />
-      <section className="p-4 md:p-8">
+      <div className="p-4 md:p-8">
         <div className=" w-full text-center mt-20 mb-8 md:mb-16">
           <span className="text-4xl md:text-5xl text-white mb-0"> Welcome ! </span>
           <h2 className="mb-4"> I'm Sébastien </h2>
@@ -26,7 +26,7 @@ function Home() {
           <img src={deskLogo} alt="" className="h-60 md:h-96 mx-auto" />
         </div>
         
-      </section>
+      </div>
       <div className="text-white text-center mt-4 md:mt-12 animate-bounce">
         <span className=""> Scroll</span>
         <div className="flex flex-row justify-center">

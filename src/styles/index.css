@@ -24,7 +24,7 @@
   }
 
   h5 {
-    @apply  text-xl md:text-2xl  text-emerald-500;;
+    @apply  text-xl md:text-2xl  text-emerald-500;
   }
 
   p {
@@ -48,7 +48,7 @@
   }
 
   input, textarea {
-    @apply bg-gray-700 border border-slate-400 rounded-lg p-2;
+    @apply bg-gray-700 border border-slate-400 rounded-lg p-2 placeholder-white;
   }
 
 }
