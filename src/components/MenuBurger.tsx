@@ -1,5 +1,6 @@
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { HashLink } from 'react-router-hash-link';
+
+import { Link } from 'react-scroll';
 
 interface BurgerMenuProps {
   setBurgerIsOpen: Function;
@@ -24,20 +25,35 @@ function BurgerMenu({ setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
         onClick={() => setBurgerIsOpen(false)}
       />
       <ul
-        className="text-slate-900 flex flex-col gap-6 text-center text-xl"
+        className="text-slate-900 flex flex-col gap-12 text-center text-xl"
         onClick={() => setBurgerIsOpen(!burgerIsOpen)}
       >
-        <li className='text-white '>
-          Home
+        <li>
+          <Link
+            to="experiences"
+            smooth={true} // Active le défilement fluide
+            className="text-white text-xl"
+          >
+            Experiences
+          </Link>
         </li>
-        <li className='text-white'>
-          Experiences
+        <li>
+          <Link
+            to="projects"
+            smooth={true}
+            className="text-white text-xl"
+          >
+            Projects
+          </Link>
         </li>
-        <li className='text-white'>
-          Projects
-        </li>
-        <li className='text-white'>
-          Contact
+        <li>
+          <Link
+            to="contact"
+            smooth={true}
+            className="text-white text-xl"
+          >
+            Contact
+          </Link>
         </li>
       </ul>
     </div>

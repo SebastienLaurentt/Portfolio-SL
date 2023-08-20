@@ -3,12 +3,15 @@ import Carousel from '../components/Carousel';
 import data from '../data/projectsData'
 import { SwiperSlide } from 'swiper/react';
 
+import { MdBuild } from 'react-icons/md';
+
 
 function Projects () {
     return (
-    <section className="bg-gradient-to-bl from-slate-900 to-gray-700 p-8">
+    <section id="projects" className="bg-gradient-to-bl from-slate-900 to-gray-700 p-8">
+        <MdBuild size={52} className="mx-auto text-rose-700" />
         <h2>Projects</h2>
-        {/* <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 reveal'> */}
+        <p className='sectionDescription'>The different projects I've worked on so far </p>
         <Carousel>
             {data.map((value) => {
                 return (

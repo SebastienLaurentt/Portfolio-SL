@@ -1,8 +1,8 @@
 function Card({ mainImage, title, tags, description, website, github }) {
     return (
         <div className="flex flex-col bg-gray-700  rounded-lg p-4">
-            <div className="flex justify-center mb-4">
-                <img src={`${mainImage}`} alt="" className="rounded-xl hover:md:scale-[0.99]" />
+            <div className="flex justify-center mb-4 h-52">
+                <img src={`${mainImage}`} alt="" className="rounded-xl transition-all duration-400 hover:md:scale-[1.05]" />
             </div>
             {/* <div
                 className= "bg-cover bg-center bg-no-repeat relative h-32"

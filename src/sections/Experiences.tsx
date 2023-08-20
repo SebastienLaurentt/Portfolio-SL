@@ -3,6 +3,8 @@ import carlogo from '../assets/carLogo.svg';
 import brainlogo from '../assets/brainLogo.svg';
 import computerlogo from '../assets/computerLogo.svg';
 
+import { MdSchool } from 'react-icons/md';
+
 
 function Experiences() {
   const [activeButton, setActiveButton] = useState('PhD Student');
@@ -49,9 +51,11 @@ function Experiences() {
   }
 
   return (
-    <section className="bg-gradient-to-tl from-slate-900 to-gray-700 min-h-screen p-8">
+    <section id="experiences" className="bg-gradient-to-tl from-slate-900 to-gray-700 min-h-screen p-8">
+      <MdSchool size={52} className="mx-auto text-rose-700" />
       <h2>Experiences</h2>
-      <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 mt-4 p-4">
+      <p className='sectionDescription'>Let's see how I went from research to web development !</p>
+      <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 md:px-4">
         <button
           className={`${
             activeButton === 'PhD Student'

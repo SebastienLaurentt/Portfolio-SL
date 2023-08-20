@@ -12,7 +12,7 @@
   }
 
   h2 {
-    @apply bg-gradient-to-r from-rose-800 to-pink-500 bg-clip-text text-transparent text-center text-4xl md:text-5xl mb-8;
+    @apply bg-gradient-to-r from-rose-800 to-pink-500 bg-clip-text text-transparent text-center text-4xl md:text-5xl;
   }
 
   h3 {
@@ -50,5 +50,10 @@
   input, textarea {
     @apply bg-gray-700 border border-slate-400 rounded-lg p-2 placeholder-white;
   }
+}
 
+/* Custom classes */
+.sectionDescription {
+  text-align: center;
+  margin-bottom: 2rem;
 }

@@ -10,9 +10,9 @@ const data = [
   },
   {
     id: 1,
-    mainImage: '../../src/assets/codit.png',
-    title: 'Codit',
-    tags: 'PHP',
+    mainImage: '../../src/assets/portfolio.png',
+    title: 'Portfolio',
+    tags: 'React',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     website: 'https://codit-three.vercel.app/',
     github:'https://github.com/O-clock-Titanium/projet-codit-front',

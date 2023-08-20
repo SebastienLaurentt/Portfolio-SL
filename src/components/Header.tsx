@@ -1,13 +1,11 @@
-
 import { useState } from 'react';
 import { IoMdMenu } from 'react-icons/io';
 import BurgerMenu from './MenuBurger';
+import { Link } from 'react-scroll';
 
-
+function Header() {
   
-  function Header() {
-
-    const [burgerIsOpen, setBurgerIsOpen] = useState(false);
+  const [burgerIsOpen, setBurgerIsOpen] = useState(false);
 
     return (
       <header className="flex flex-row justify-between p-6 text-white text-lg">
@@ -25,24 +23,36 @@ import BurgerMenu from './MenuBurger';
           />
         </div>
       <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen}/>
-        <ul
-          className=" hidden md:flex text-slate-900   gap-6 text-center text-xl"
-
-        >
-          <li className='text-white '>
-            Home
-          </li>
-          <li className='text-white'>
+      <ul className="hidden md:flex text-slate-900 gap-6 text-center text-xl">
+        <li>
+          <Link
+            to="experiences"
+            smooth={true} // Active le défilement fluide
+            className="text-white cursor-pointer"
+          >
             Experiences
-          </li>
-          <li className='text-white'>
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="projects"
+            smooth={true}
+            className="text-white cursor-pointer"
+          >
             Projects
-          </li>
-          <li className='text-white'>
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="contact"
+            smooth={true}
+            className="text-white cursor-pointer"
+          >
             Contact
-          </li>
-        </ul>
-      </header>
+          </Link>
+        </li>
+      </ul>
+    </header>
     );
   }
 export default Header;

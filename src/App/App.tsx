@@ -6,10 +6,10 @@ import Projects from '../sections/Projects';
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Experiences />
-      <Projects />
-      <Contact />
+      <Home  />
+      <Experiences  />
+      <Projects  />
+      <Contact  />
     </div>
   );
 }

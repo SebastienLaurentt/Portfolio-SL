@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import deskLogo from '../assets/deskLogo.svg';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
-MdKeyboardDoubleArrowDown;
+
 
 function Home() {
   return (
