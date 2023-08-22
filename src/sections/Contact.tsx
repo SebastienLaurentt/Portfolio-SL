@@ -25,32 +25,27 @@ function Contact () {
 
         <div className="md:px-4">
           <form action="submit" >
-              <div className="flex flex-col gap-y-2 md:gap-y-4 mb-4 md:text-lg  ">
+              <div className="flex flex-col gap-y-2 md:gap-y-4 mb-4 md:text-lg text-white  ">
                   <input
                   type="text"
-                  label="Name"
                   placeholder="Name"
                   className=""
                   />
 
                   <input
                   type="text"
-                  label="Username"
                   placeholder="Email"
                   className=""
                   />
 
                   <input
                   type="text"
-                  label="Name"
                   placeholder="Subject"
                   className=""
                   />
 
                   
                   <textarea
-                  type="text"
-                  label="Username"
                   placeholder="Please describe your request"
                   className="h-52"
                   />

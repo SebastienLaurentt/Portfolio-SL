@@ -5,10 +5,6 @@ import { Link } from 'react-scroll';
 interface BurgerMenuProps {
   setBurgerIsOpen: Function;
   burgerIsOpen: boolean;
-  headerCategory: {
-    label: string;
-    route: string;
-  }[];
 }
 
 function BurgerMenu({ setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
