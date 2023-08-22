@@ -1,18 +1,38 @@
-import TitleSection from "../components/TitleSection";
+import Card from '../components/Card';
+import Carousel from '../components/Carousel';
+import data from '../data/projectsData'
+import { SwiperSlide } from 'swiper/react';
+
+import { MdBuild } from 'react-icons/md';
+import SectionHeader from '../components/SectionHeader';
 
 
 function Projects () {
     return (
-    <section className="bg-gradient-to-bl from-slate-900 to-gray-700 min-h-screen p-8">
-        <TitleSection titleContent="Projects" />
-        <div className="flex flex-row justify-center mt-4">
-            <button className="bg-gradient-to-r from-teal-700 to-cyan-400 text-white flex flex-col p-2 rounded-lg">
-                <span>Codit</span>
-                <span>2023 - </span>
-            </button>
-        </div>
-
-
+    <section id="projects" className="bg-gradient-to-bl from-slate-900 to-gray-700 p-8">
+        <MdBuild size={52} className="mx-auto text-rose-700" />
+        <SectionHeader
+            sectionTitle="Projects"
+            sectionDescription="The different projects I've worked on so far "
+        />
+        <Carousel>
+            {data.map((value) => {
+                return (
+                <SwiperSlide className="mb-12" key={value.id}>
+                    <Card 
+                    key={value.id}
+                    mainImage={value.mainImage}
+                    title= {value.title}
+                    tags= {value.tags}
+                    description= {value.description}
+                    website= {value.website}
+                    github= {value.github}
+                    />
+                </SwiperSlide>
+                );
+            })}
+        </Carousel>
+        {/* </div> */}
 
     </section>
     );
