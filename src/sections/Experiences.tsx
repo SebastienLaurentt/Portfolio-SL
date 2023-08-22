@@ -24,7 +24,7 @@ function Experiences() {
         <p className="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis sunt nobis earum id a dolor eos? Eius odit necessitatibus ab earum error aperiam, maxime ea eveniet sequi et voluptatem ipsa adipisci illo consectetur iusto, cupiditate alias nemo nihil ipsam.
         </p>
-        <img src={brainlogo} alt="" className="mt-4 md:mt-8 h-52 md:h-80 mx-auto" />
+        <img src={brainlogo} alt="" className="mt-4 md:mt-8 h-48 md:h-80 mx-auto" />
       </div>
     );
   } else if (activeButton === 'Post Doc') {
@@ -35,7 +35,7 @@ function Experiences() {
         <p className="">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis sunt nobis earum id a dolor eos? Eius odit necessitatibus ab earum error aperiam, maxime ea eveniet sequi et voluptatem ipsa adipisci illo consectetur iusto, cupiditate alias nemo nihil ipsam.
         </p>
-        <img src={carlogo} alt="" className="mt-4 md:mt-8 h-52 md:h-80 mx-auto" />
+        <img src={carlogo} alt="" className="mt-4 md:mt-8 h-48 md:h-80 mx-auto" />
       </>
     );
   } else if (activeButton === 'Web Dev') {
@@ -46,7 +46,7 @@ function Experiences() {
         <p className="">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis sunt nobis earum id a dolor eos? Eius odit necessitatibus ab earum error aperiam, maxime ea eveniet sequi et voluptatem ipsa adipisci illo consectetur iusto, cupiditate alias nemo nihil ipsam.
         </p>
-        <img src={computerlogo} alt="" className="mt-4 md:mt-12 h-52 md:h-80 mx-auto" />
+        <img src={computerlogo} alt="" className="mt-4 md:mt-12 h-48 md:h-80 mx-auto" />
       </>
     );
   }
