@@ -2,14 +2,17 @@ import { SiMinutemailer } from 'react-icons/si';
 
 import { ImLocation2 } from 'react-icons/im'
 import { GrMail } from 'react-icons/gr'
+import SectionHeader from '../components/SectionHeader';
 
 function Contact () {
     return (
     <section id="contact" className="bg-gradient-to-tl from-slate-900 to-gray-700 p-8">
         <div>
           <SiMinutemailer size={52} className="mx-auto text-rose-700" />
-          <h2>Contact</h2>
-          <p className='sectionDescription'>Do you have any questions or requests? Please feel free to contact me !</p>
+          <SectionHeader
+            sectionTitle="Contact"
+            sectionDescription="Do you have any questions or requests? Please feel free to contact me !"
+          />
           <div className='flex justify-center gap-x-6 mb-8'>
             <div>
               <ImLocation2 size={52} className="mx-auto text-emerald-500 mb-2" />

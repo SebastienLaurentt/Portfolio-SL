@@ -16,14 +16,15 @@ interface CarouselProps {
 
 function Carousel({ children }: CarouselProps) {
   return (
-    <Swiper style={{
-      "--swiper-pagination-bullet-width": "16px",
-      "--swiper-pagination-bullet-height": "8px",
-      "--swiper-pagination-bullet-border-radius": "30%",
-      "--swiper-pagination-color": "#22d3ee",
-      "--swiper-pagination-bullet-size": "8px",
-      "--swiper-pagination-bullet-horizontal-gap": "6px"
-    }}
+    <Swiper 
+    // style={{
+    //   "--swiper-pagination-bullet-width": "16px",
+    //   "--swiper-pagination-bullet-height": "8px",
+    //   "--swiper-pagination-bullet-border-radius": "30%",
+    //   "--swiper-pagination-color": "#22d3ee",
+    //   "--swiper-pagination-bullet-size": "8px",
+    //   "--swiper-pagination-bullet-horizontal-gap": "6px"
+    // }}
       slidesPerView={1}
       spaceBetween={16}
       loop={false}

@@ -20,7 +20,7 @@
   }
 
   h4 {
-    @apply  italic mb-8 text-white text-md md:text-lg;
+    @apply  italic mb-4 text-white text-md md:text-lg;
   }
 
   h5 {

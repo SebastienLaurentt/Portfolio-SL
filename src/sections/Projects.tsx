@@ -4,14 +4,17 @@ import data from '../data/projectsData'
 import { SwiperSlide } from 'swiper/react';
 
 import { MdBuild } from 'react-icons/md';
+import SectionHeader from '../components/SectionHeader';
 
 
 function Projects () {
     return (
     <section id="projects" className="bg-gradient-to-bl from-slate-900 to-gray-700 p-8">
         <MdBuild size={52} className="mx-auto text-rose-700" />
-        <h2>Projects</h2>
-        <p className='sectionDescription'>The different projects I've worked on so far </p>
+        <SectionHeader
+            sectionTitle="Projects"
+            sectionDescription="The different projects I've worked on so far "
+        />
         <Carousel>
             {data.map((value) => {
                 return (
