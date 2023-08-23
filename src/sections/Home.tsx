@@ -19,8 +19,7 @@ function Home() {
           <h2 className="mb-4"> I'm Sébastien </h2>
           <p className="mb-8">
             {' '}
-            A cognitive researcher who wants to use brain knowledge to build an
-            accessible web{' '}
+            A <strong>cognitive researcher</strong>  who wants to use brain knowledge to make the web more <strong>accessible</strong> {' '}
           </p>
           <a
             className="text-white bg-cyan-700 text-md md:text-lg p-4 rounded-full"

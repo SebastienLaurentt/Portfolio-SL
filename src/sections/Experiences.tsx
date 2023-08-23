@@ -23,8 +23,13 @@ function Experiences() {
         <h3 className="mb-0">PhD Student</h3>
         <h4 className="">Gustave Eiffel University</h4>
         <p className="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis sunt nobis earum id a dolor eos? Eius odit necessitatibus ab earum error aperiam, maxime ea eveniet sequi et voluptatem ipsa adipisci illo consectetur iusto, cupiditate alias nemo nihil ipsam.
+        The aim of this thesis was to <strong className='text-emerald-500'>adapt</strong>  the Highway Code learning aid for deaf people to <strong className='text-emerald-500'>suit</strong> their <strong className='text-emerald-500'>cognitive profile</strong>.
         </p>
+        <p className="">
+        Experiments were carried out to collect behavioral and physiological <strong className='text-emerald-500'>data</strong> using <strong className='text-emerald-500'>oculometry</strong>, as well as <strong className='text-emerald-500'>brain</strong> activity.
+        </p>
+
+
         <img src={brainlogo} alt="An illustration of researchers doing brain research. (Copyright @ https://fr.freepik.com/vecteurs-libre/illustration-concept-chimie-du-cerveau_29654747.htm#&position=2&from_view=user)" className="mt-4 md:mt-8 h-48 md:h-80 mx-auto" />
       </div>
     );
@@ -34,8 +39,14 @@ function Experiences() {
         <h3 className="mb-0">Post Doc</h3>
         <h4 className="">Gustave Eiffel University</h4>
         <p className="">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis sunt nobis earum id a dolor eos? Eius odit necessitatibus ab earum error aperiam, maxime ea eveniet sequi et voluptatem ipsa adipisci illo consectetur iusto, cupiditate alias nemo nihil ipsam.
+        This post-doctorate was linked to a <strong className='text-emerald-500'>European</strong> project to assess the <strong className='text-emerald-500'>acceptability</strong> of <strong className='text-emerald-500'>autonomous</strong> vehicles for young and elderly people.
         </p>
+        <p className="">
+        A <strong className='text-emerald-500'>driving</strong> simulator was used to immerse participants in various <strong className='text-emerald-500'>scenarios</strong> to gather their <strong className='text-emerald-500'>impressions</strong>. 
+        </p>
+
+
+        
         <img src={carlogo} alt="An illustration of an individual in a car without a steering wheel because it is an autonomous vehicle. (Copyright @ https://fr.freepik.com/vecteurs-libre/illustration-concept-voiture-autonome_19184615.htm#&position=1&from_view=user)" className="mt-4 md:mt-8 h-48 md:h-80 mx-auto" />
       </>
     );
@@ -45,7 +56,10 @@ function Experiences() {
         <h3 className="mb-0">Web Dev</h3>
         <h4 className="">O'Clock Company</h4>
         <p className="">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, blanditiis sunt nobis earum id a dolor eos? Eius odit necessitatibus ab earum error aperiam, maxime ea eveniet sequi et voluptatem ipsa adipisci illo consectetur iusto, cupiditate alias nemo nihil ipsam.
+        The goal of this training was to provide the necessary <strong className='text-emerald-500'>foundations</strong> for website development, teaching programming languages such as <strong className='text-emerald-500'>JavaScript</strong> or <strong className='text-emerald-500'>PHP</strong>.
+        </p>
+        <p className="">
+        A final project (<i>refer to <strong className='text-emerald-500'>Codit</strong>, see below</i>) was carried out over a duration of <strong className='text-emerald-500'>1 month</strong> to consolidate the knowledge acquired during the previous month.
         </p>
         <img src={computerlogo} alt="An illustration of a laptop used for programming. (Copyright @ https://fr.freepik.com/vecteurs-libre/illustration-concept-codage-main_21864184.htm#&position=0&from_view=user) " className="mt-4 md:mt-12 h-48 md:h-80 mx-auto" />
       </>
