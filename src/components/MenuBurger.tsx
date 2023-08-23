@@ -9,7 +9,7 @@ interface BurgerMenuProps {
 
 function BurgerMenu({ setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
 
-  const position = burgerIsOpen ? 'top-0 h-screen' : '-top-full h-0';
+  const position = burgerIsOpen ? 'top-0 h-screen no-scroll' : '-top-full h-0';
 
   return (
     <div
@@ -21,7 +21,7 @@ function BurgerMenu({ setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
         onClick={() => setBurgerIsOpen(false)}
       />
       <ul
-        className="text-slate-900 flex flex-col gap-12 text-center text-xl"
+        className="text-slate-900 flex flex-col gap-12 text-center text-xl mt-12"
         onClick={() => setBurgerIsOpen(!burgerIsOpen)}
       >
         <li>
