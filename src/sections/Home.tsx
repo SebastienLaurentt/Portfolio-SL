@@ -14,7 +14,7 @@ function Home() {
     <Section heightScreen={true} gradientToBl={true}>
       <Header />
       <div className="p-4 md:p-8">
-        <div className=" w-full text-center mt-20 mb-8 md:mb-16">
+        <div className=" w-full text-center mt-8 mb-8 md:mb-16">
           <span className="text-4xl md:text-5xl text-white mb-0"> Welcome ! </span>
           <h2 className="mb-4"> I'm Sébastien </h2>
           <p className="mb-8">
