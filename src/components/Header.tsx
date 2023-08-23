@@ -17,7 +17,7 @@ function Header() {
 
 
     return (
-      <header className="flex flex-row justify-between p-6 text-white text-lg">
+      <header className="flex flex-row justify-between p-8 lg:py-16  text-white lg:w-4/5 lg:mx-auto ">
         <div className="">
             <span className="">SL -</span>
             <span className="font-bold text-emerald-500"> Web Developer</span>
@@ -32,12 +32,12 @@ function Header() {
           />
         </div>
       <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen}/>
-      <ul className="hidden md:flex text-slate-900 gap-6 text-center text-xl">
+      <ul className="hidden md:flex text-slate-900 gap-6 lg:gap-12 ">
         <li>
           <Link
             to="experiences"
             smooth={true} // Active le défilement fluide
-            className="text-white cursor-pointer"
+            className="text-white cursor-pointer md:hover:text-cyan-500"
           >
             Experiences
           </Link>
@@ -46,7 +46,7 @@ function Header() {
           <Link
             to="projects"
             smooth={true}
-            className="text-white cursor-pointer"
+            className="text-white cursor-pointer md:hover:text-cyan-500"
           >
             Projects
           </Link>
@@ -55,7 +55,7 @@ function Header() {
           <Link
             to="contact"
             smooth={true}
-            className="text-white cursor-pointer"
+            className="text-white cursor-pointer md:hover:text-cyan-500"
           >
             Contact
           </Link>

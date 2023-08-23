@@ -27,7 +27,7 @@ function Contact () {
         </div>
         
 
-        <div className="md:px-4">
+        {/* <div className="md:px-4">
           <form action="submit" >
               <div className="flex flex-col gap-y-2 md:gap-y-4 mb-4 md:text-lg text-white  ">
                   <input
@@ -61,7 +61,7 @@ function Contact () {
           </button>
 
           </form>
-        </div>
+        </div> */}
 
     </Section>
     );
