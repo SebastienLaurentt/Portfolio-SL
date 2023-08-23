@@ -3,10 +3,11 @@ import { SiMinutemailer } from 'react-icons/si';
 import { ImLocation2 } from 'react-icons/im'
 import { GrMail } from 'react-icons/gr'
 import SectionHeader from '../components/SectionHeader';
+import Section from '../components/Section';
 
 function Contact () {
     return (
-    <section id="contact" className="bg-gradient-to-tl from-slate-900 to-gray-700 p-8">
+      <Section id ="contact" heightScreen={false} gradientToBl={false}>
         <div>
           <SiMinutemailer size={52} className="mx-auto text-rose-700" />
           <SectionHeader
@@ -62,7 +63,7 @@ function Contact () {
           </form>
         </div>
 
-    </section>
+    </Section>
     );
   }
 export default Contact;

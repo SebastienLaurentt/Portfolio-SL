@@ -5,11 +5,12 @@ import { SwiperSlide } from 'swiper/react';
 
 import { MdBuild } from 'react-icons/md';
 import SectionHeader from '../components/SectionHeader';
+import Section from '../components/Section';
 
 
 function Projects () {
     return (
-    <section id="projects" className="bg-gradient-to-bl from-slate-900 to-gray-700 p-8">
+        <Section id ="projects" heightScreen={false} gradientToBl={true}>
         <MdBuild size={52} className="mx-auto text-rose-700" />
         <SectionHeader
             sectionTitle="Projects"
@@ -18,7 +19,7 @@ function Projects () {
         <Carousel>
             {data.map((value) => {
                 return (
-                <SwiperSlide className="mb-12" key={value.id}>
+                <SwiperSlide className="mb-12 mx-auto" key={value.id}>
                     <Card 
                     key={value.id}
                     mainImage={value.mainImage}
@@ -34,7 +35,7 @@ function Projects () {
         </Carousel>
         {/* </div> */}
 
-    </section>
+    </Section>
     );
   }
 export default Projects;

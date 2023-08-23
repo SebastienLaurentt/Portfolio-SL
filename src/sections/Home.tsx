@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import CvFile from '../assets/CV.pdf'
 import deskLogo from '../assets/deskLogo.svg';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
+import Section from '../components/Section';
 
 
 
@@ -10,10 +11,10 @@ import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 function Home() {
   return (
     
-    <section className="bg-gradient-to-bl from-slate-900 to-gray-700 min-h-screen p-8">
+    <Section heightScreen={true} gradientToBl={true}>
       <Header />
       <div className="p-4 md:p-8">
-        <div className=" w-full text-center mt-20 mb-8 md:mb-16">
+        <div className=" w-full text-center mt-8 mb-8 md:mb-16">
           <span className="text-4xl md:text-5xl text-white mb-0"> Welcome ! </span>
           <h2 className="mb-4"> I'm Sébastien </h2>
           <p className="mb-8">
@@ -40,7 +41,7 @@ function Home() {
           <MdKeyboardDoubleArrowDown size={28} />
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 export default Home;
