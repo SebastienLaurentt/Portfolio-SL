@@ -21,7 +21,7 @@ function BurgerMenu({ setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
         onClick={() => setBurgerIsOpen(false)}
       />
       <ul
-        className="text-slate-900 flex flex-col gap-12 text-center text-xl"
+        className="text-slate-900 flex flex-col gap-12 text-center text-xl mt-12"
         onClick={() => setBurgerIsOpen(!burgerIsOpen)}
       >
         <li>
