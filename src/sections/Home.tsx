@@ -13,14 +13,14 @@ function Home() {
     
     <Section heightScreen={true} gradientToBl={true}>
       <Header />
-      <div className="p-4 md:p-8">
-        <div className=" w-full text-center mt-8 mb-8 md:mb-16">
+      <div className="p-4 md:p-8 lg:px-16 lg:w-4/5 lg:mx-auto lg:flex lg:items-center">
+        {/* Hero  */}
+        <div className=" w-full lg:w-1/2 text-center lg:text-left mt-16 mb-12 md:mb-20">
           <span className="text-4xl md:text-5xl text-white mb-0"> Welcome ! </span>
-          <h2 className="mb-4"> I'm Sébastien </h2>
+          <h2 className="mb-4 lg:text-left"> I'm Sébastien </h2>
           <p className="mb-8">
             {' '}
-            A cognitive researcher who wants to use brain knowledge to build an
-            accessible web{' '}
+            A <strong>cognitive researcher</strong>  who wants to use brain knowledge to make the web more <strong>accessible</strong> {' '}
           </p>
           <a
             className="text-white bg-cyan-700 text-md md:text-lg p-4 rounded-full"
@@ -30,11 +30,12 @@ function Home() {
             DOWNLOAD CV
           </a>
         </div>
-        <div>
-          <img src={deskLogo} alt="" className="h-60 md:h-96 mx-auto" />
+        {/* Home logo */}
+        <div className='lg:w-2/3 lg:flex lg:justify-end'>
+          <img src={deskLogo} alt="" className="h-60 mx-auto md:h-96 lg:h-[32rem]" />
         </div>
-        
       </div>
+      {/* Scroll bottom */}
       <div className="text-white text-center mt-4 md:mt-12 animate-bounce">
         <span className=""> Scroll </span>
         <div className="flex flex-row justify-center">

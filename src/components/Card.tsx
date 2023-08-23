@@ -33,7 +33,7 @@ function Card({ mainImage, title, tags, description, website, github }: CardProp
                         </span>
                     ))}
                 </div>
-                <p>{description}</p>
+                <p className="">{description}</p>
                 <div className="text-gray-300 flex gap-x-4 italic">
                     <a href={`${website}`}> View Website  </a>
                     <a href={`${github}`}> View GitHub  </a>
