@@ -5,6 +5,7 @@ import computerlogo from '../assets/computerLogo.svg';
 
 import { MdSchool } from 'react-icons/md';
 import SectionHeader from '../components/SectionHeader';
+import Section from '../components/Section';
 
 
 function Experiences() {
@@ -52,7 +53,7 @@ function Experiences() {
   }
 
   return (
-    <section id="experiences" className="bg-gradient-to-tl from-slate-900 to-gray-700 min-h-screen p-8">
+    <Section id ="experiences" heightScreen={true} gradientToBl={false}>
       <MdSchool size={52} className="mx-auto text-rose-700" />
       <SectionHeader
         sectionTitle="Experience"
@@ -96,7 +97,7 @@ function Experiences() {
       <section className="p-4 md:p-8  w-full text-center mt-4 flex flex-col">
         {sectionContent}
       </section>
-    </section>
+    </Section>
   );
 }
 
