@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoMdMenu } from 'react-icons/io';
 import BurgerMenu from './MenuBurger';
 import { Link } from 'react-scroll';
@@ -6,6 +6,15 @@ import { Link } from 'react-scroll';
 function Header() {
   
   const [burgerIsOpen, setBurgerIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (burgerIsOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [burgerIsOpen]);
+
 
     return (
       <header className="flex flex-row justify-between p-6 text-white text-lg">

@@ -9,7 +9,7 @@ interface BurgerMenuProps {
 
 function BurgerMenu({ setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
 
-  const position = burgerIsOpen ? 'top-0 h-screen' : '-top-full h-0';
+  const position = burgerIsOpen ? 'top-0 h-screen no-scroll' : '-top-full h-0';
 
   return (
     <div
