@@ -32,7 +32,7 @@ function Home() {
         </div>
         {/* Home logo */}
         <div className='lg:w-2/3 lg:flex lg:justify-end'>
-          <img src={deskLogo} alt="" className="h-60 mx-auto md:h-96 lg:h-[32rem]" />
+          <img src={deskLogo} alt="" className="h-60 mx-auto lg:mx-0 md:h-96 lg:h-[32rem]" />
         </div>
       </div>
       {/* Scroll bottom */}
