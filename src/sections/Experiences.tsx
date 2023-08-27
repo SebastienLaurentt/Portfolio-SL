@@ -74,7 +74,10 @@ function Experiences() {
   }
 
   return (
-    <Section id ="experiences" heightScreen={true} gradientToBl={false}>
+    <Section id ="experiences" 
+      gradientToBl={false}
+      paddingBottom={true}
+    >
       <MdSchool size={52} className="mx-auto text-rose-700" />
       <SectionHeader
         sectionTitle="Experience"
@@ -115,7 +118,7 @@ function Experiences() {
           <span>2022 - 2023</span>
         </button>
       </div>
-      <section className="p-4 md:p-8  w-full text-center mt-4 lg:mt-12 lg:w-4/5 lg:mx-auto lg:flex">
+      <section className="p-4 md:p-8  w-full text-center mt-4 lg:mt-20 lg:w-4/5 lg:mx-auto lg:flex">
         {sectionContent}
       </section>
     </Section>

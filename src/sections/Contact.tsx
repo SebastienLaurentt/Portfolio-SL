@@ -7,7 +7,10 @@ import Section from '../components/Section';
 
 function Contact () {
     return (
-      <Section id ="contact" heightScreen={false} gradientToBl={false}>
+      <Section id ="contact"  
+        gradientToBl={false}
+        paddingBottom={false}
+      >
         <div>
           <SiMinutemailer size={52} className="mx-auto text-rose-700" />
           <SectionHeader
