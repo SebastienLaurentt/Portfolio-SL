@@ -20,7 +20,7 @@ const data = [
   },
   {
     id: 1,
-    mainImage: '../../public/static/imgg/portfolio.png',
+    mainImage: '../../public/static/img/portfolio.png',
     title: 'Portfolio',
     tags: [
       {
