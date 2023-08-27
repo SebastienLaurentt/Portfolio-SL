@@ -20,7 +20,7 @@ function Home() {
       <Header />
       <div className="p-4 md:p-8 lg:px-16 lg:w-4/5 lg:mx-auto lg:flex lg:items-center">
         {/* Hero  */}
-        <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8 mb-12 md:mb-20">
+        <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8  mb-12 md:mb-20">
           <span className="text-4xl md:text-5xl text-white mb-0"> Welcome ! </span>
           <h2 className="mb-2 lg:text-left"> I'm Sébastien </h2>
           <div className='mb-4 flex gap-x-4 justify-center lg:justify-start'>

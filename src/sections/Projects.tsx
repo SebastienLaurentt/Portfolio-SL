@@ -19,25 +19,25 @@ function Projects () {
             sectionTitle="Projects"
             sectionDescription="The different projects I've worked on so far "
         />
-        <Carousel>
-            {data.map((value) => {
-                return (
-                <SwiperSlide className="mb-12 mx-auto" key={value.id}>
-                    <Card 
-                    key={value.id}
-                    mainImage={value.mainImage}
-                    title= {value.title}
-                    tags= {value.tags}
-                    description= {value.description}
-                    website= {value.website}
-                    github= {value.github}
-                    />
-                </SwiperSlide>
-                );
-            })}
-        </Carousel>
-        {/* </div> */}
-
+        <div className='lg: mt-24'>
+            <Carousel>
+                {data.map((value) => {
+                    return (
+                    <SwiperSlide className="mb-12 mx-auto" key={value.id}>
+                        <Card 
+                        key={value.id}
+                        mainImage={value.mainImage}
+                        title= {value.title}
+                        tags= {value.tags}
+                        description= {value.description}
+                        website= {value.website}
+                        github= {value.github}
+                        />
+                    </SwiperSlide>
+                    );
+                })}
+            </Carousel>
+        </div>
     </Section>
     );
   }

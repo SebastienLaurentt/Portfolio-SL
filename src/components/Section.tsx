@@ -20,11 +20,11 @@ function Section ({
     : 'bg-gradient-to-tl from-slate-900 to-gray-700';
     
     const isPaddingBottom = paddingBottom
-    ? 'pb-12'
+    ? 'pb-12 md:pb-20'
     : '';
 
     return(
-        <section id= {`${id}`} className= {` ${isGradientToBl} ${isPaddingBottom} ${className} py-4 px-8`}>
+        <section id= {`${id}`} className= {` ${isGradientToBl} ${isPaddingBottom} ${className} py-4 md:py-8 px-8`}>
             <>{children}</>
         </section>
 
