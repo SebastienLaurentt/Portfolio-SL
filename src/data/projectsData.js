@@ -1,7 +1,7 @@
 const data = [
   {
     id: 0,
-    mainImage: '../../src/assets/codit.png',
+    mainImage: '/static/img/codit.png',
     title: 'Codit',
     tags: [
       {
@@ -39,7 +39,7 @@ const data = [
   },
   {
     id: 2,
-    mainImage: '../../src/assets/codit.png',
+    mainImage: '/static/img/codit.png',
     title: 'Codit',
     tags: [
       {
