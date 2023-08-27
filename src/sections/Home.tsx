@@ -13,7 +13,10 @@ import { AiFillLinkedin } from 'react-icons/ai';
 function Home() {
   return (
     
-    <Section heightScreen={true} gradientToBl={true}>
+    <Section 
+      gradientToBl={true}
+      paddingBottom={true}
+    >
       <Header />
       <div className="p-4 md:p-8 lg:px-16 lg:w-4/5 lg:mx-auto lg:flex lg:items-center">
         {/* Hero  */}

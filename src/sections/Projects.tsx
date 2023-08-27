@@ -10,7 +10,10 @@ import Section from '../components/Section';
 
 function Projects () {
     return (
-        <Section id ="projects" heightScreen={false} gradientToBl={true}>
+        <Section id ="projects"  
+            gradientToBl={true}
+            paddingBottom={true}
+        >
         <MdBuild size={52} className="mx-auto text-rose-700" />
         <SectionHeader
             sectionTitle="Projects"
