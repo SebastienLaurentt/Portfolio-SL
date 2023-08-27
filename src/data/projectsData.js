@@ -33,7 +33,7 @@ const data = [
         "name" :"Typescript",
       },
     ],
-    description: 'The first version of my portfoliooo',
+    description: 'The first version of my portfolio',
     website: 'https://codit-three.vercel.app/',
     github:'https://github.com/O-clock-Titanium/projet-codit-front',
   },
