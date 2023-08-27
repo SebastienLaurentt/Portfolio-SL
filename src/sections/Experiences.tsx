@@ -74,7 +74,7 @@ function Experiences() {
   }
 
   return (
-    <Section id ="experiences" heightScreen={true} gradientToBl={false}>
+    <Section id ="experiences" heightScreen={false} gradientToBl={false}>
       <MdSchool size={52} className="mx-auto text-rose-700" />
       <SectionHeader
         sectionTitle="Experience"
