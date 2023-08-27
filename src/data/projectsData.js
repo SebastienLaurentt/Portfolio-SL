@@ -56,6 +56,25 @@ const data = [
     website: 'https://codit-three.vercel.app/',
     github:'https://github.com/O-clock-Titanium/projet-codit-front',
   },
+  {
+    id: 2,
+    mainImage: '/static/img/codit.png',
+    title: 'Codit',
+    tags: [
+      {
+        "name" :"React",
+      },
+      {
+        "name" :"Tailwind",
+      },
+      {
+        "name" :"JS",
+      },
+    ],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    website: 'https://codit-three.vercel.app/',
+    github:'https://github.com/O-clock-Titanium/projet-codit-front',
+  },
 ];
 
 export default data;
