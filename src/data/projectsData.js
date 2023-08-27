@@ -20,7 +20,7 @@ const data = [
   },
   {
     id: 1,
-    mainImage: '../../src/assets/portfolio.png',
+    mainImage: '../../public/assets/portfolio.png',
     title: 'Portfolio',
     tags: [
       {
@@ -33,7 +33,7 @@ const data = [
         "name" :"Typescript",
       },
     ],
-    description: 'The first version of my portfolio',
+    description: 'The first version of my portfoliooo',
     website: 'https://codit-three.vercel.app/',
     github:'https://github.com/O-clock-Titanium/projet-codit-front',
   },
