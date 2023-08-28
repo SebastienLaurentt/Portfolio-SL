@@ -24,10 +24,10 @@ function Experiences() {
           <h3 className="mb-0">PhD Student</h3>
           <h4 className="">Gustave Eiffel University</h4>
           <p className="mb-2">
-          The aim of this thesis was to <strong className='text-emerald-500'>adapt</strong>  the Highway Code learning aid for deaf people to <strong className='text-emerald-500'>suit</strong> their <strong className='text-emerald-500'>cognitive profile</strong>.
+          The aim of this thesis was to <strong className='text-emerald-500'>adapt</strong>  the french Highway Code learning aid for deaf people to <strong className='text-emerald-500'>suit</strong> their <strong className='text-emerald-500'>cognitive profile</strong>.
           </p>
           <p className="mb-2">
-          Experiments were carried out to collect behavioral and physiological <strong className='text-emerald-500'>data</strong> using <strong className='text-emerald-500'>oculometry</strong>, as well as <strong className='text-emerald-500'>brain</strong> activity.
+          Experiments were carried out to collect behavioral and physiological <strong className='text-emerald-500'>data</strong> using <strong className='text-emerald-500'>oculometry</strong> and <strong className='text-emerald-500'>brain</strong> activity.
           </p>
         </div>
         <div className= "lg:w-2/3 lg:flex lg:justify-end">
@@ -42,10 +42,10 @@ function Experiences() {
           <h3 className="mb-0">Post Doc</h3>
           <h4 className="">Gustave Eiffel University</h4>
           <p className="mb-2">
-          This post-doctorate was linked to a <strong className='text-emerald-500'>European</strong> project to assess the <strong className='text-emerald-500'>acceptability</strong> of <strong className='text-emerald-500'>autonomous</strong> vehicles for young and elderly people.
+          This position was linked to a <strong className='text-emerald-500'>European</strong> project to assess the <strong className='text-emerald-500'>acceptability</strong> of <strong className='text-emerald-500'>autonomous</strong> vehicles for young and elderly people.
           </p>
           <p className="mb-2">
-          A <strong className='text-emerald-500'>driving</strong> simulator was used to immerse participants in various <strong className='text-emerald-500'>scenarios</strong> to gather their <strong className='text-emerald-500'>impressions</strong>. 
+          A <strong className='text-emerald-500'>driving</strong> simulator and <strong className='text-emerald-500'>virtual reality</strong> were used to immerse participants in various <strong className='text-emerald-500'>scenarios</strong> to gather their <strong className='text-emerald-500'>impressions</strong>. 
           </p>
         </div>
         <div className= "lg:w-2/3 lg:flex lg:justify-end">
@@ -63,7 +63,7 @@ function Experiences() {
           The goal of this training was to provide the necessary <strong className='text-emerald-500'>foundations</strong> for website development, teaching programming languages such as <strong className='text-emerald-500'>JavaScript</strong> or <strong className='text-emerald-500'>PHP</strong>.
           </p>
           <p className="mb-2">
-          A final project (<i><strong className='text-emerald-500'>Codit</strong>, see below</i>) was carried out over a duration of <strong className='text-emerald-500'>1 month</strong> to consolidate the knowledge acquired during the previous month.
+          A final project, <strong className='text-emerald-500'>Codit</strong>, was carried out during the last month.
           </p>
         </div>
         <div className= "lg:w-2/3 lg:flex lg:justify-end">
