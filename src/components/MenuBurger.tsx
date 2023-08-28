@@ -27,6 +27,16 @@ function BurgerMenu({ setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
       >
         <li>
           <Link
+            to="about"
+            smooth={true} // Active le défilement fluide
+            className="text-white text-xl"
+            onClick={() => setBurgerIsOpen(false)}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
             to="experiences"
             smooth={true} // Active le défilement fluide
             className="text-white text-xl"

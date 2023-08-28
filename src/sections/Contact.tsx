@@ -8,7 +8,7 @@ import Section from '../components/Section';
 function Contact () {
     return (
       <Section id ="contact"  
-        gradientToBl={false}
+        gradientToBl={true}
         paddingBottom={false}
       >
         <div>
@@ -66,7 +66,7 @@ function Contact () {
           </form>
         </div> */}
 
-    </Section>
+      </Section>
     );
   }
 export default Contact;

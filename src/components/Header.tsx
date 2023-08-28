@@ -35,6 +35,15 @@ function Header() {
       <ul className="hidden md:flex text-slate-900 gap-6 lg:gap-12 ">
         <li>
           <Link
+              to="about"
+              smooth={true} // Active le défilement fluide
+              className="text-white cursor-pointer md:hover:text-cyan-500"
+            >
+              About
+          </Link>
+        </li>
+        <li>
+          <Link
             to="experiences"
             smooth={true} // Active le défilement fluide
             className="text-white cursor-pointer md:hover:text-cyan-500"

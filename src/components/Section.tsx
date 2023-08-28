@@ -24,7 +24,7 @@ function Section ({
     : '';
 
     return(
-        <section id= {`${id}`} className= {` ${isGradientToBl} ${isPaddingBottom} ${className} py-4 md:py-8 px-8`}>
+        <section id= {`${id}`} className= {` ${isGradientToBl} ${isPaddingBottom} ${className} py-4 md:py-8 px-8 `}>
             <>{children}</>
         </section>
 
