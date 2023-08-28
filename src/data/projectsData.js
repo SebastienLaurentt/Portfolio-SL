@@ -14,7 +14,7 @@ const data = [
         "name" :"JS",
       },
     ],
-    description: 'The end-of-training project with O Clock (front-end)',
+    description: "The final project with O'Clock",
     website: 'https://codit-three.vercel.app/',
     github:'https://github.com/O-clock-Titanium/projet-codit-front',
   },
