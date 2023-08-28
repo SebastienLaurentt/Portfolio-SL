@@ -17,7 +17,7 @@ function Header() {
 
 
     return (
-      <header className="flex flex-row justify-between p-8 lg:py-16  text-white lg:w-4/5 lg:mx-auto ">
+      <header className="flex flex-row justify-between p-8 lg:py-16  text-white xl:w-4/5 lg:mx-auto ">
         <div className="">
             <span className="">SL -</span>
             <span className="font-bold text-emerald-500"> Web Developer</span>

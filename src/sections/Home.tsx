@@ -18,7 +18,7 @@ function Home() {
       paddingBottom={true}
     >
       <Header />
-      <div className="p-4 md:p-8 lg:px-16 lg:w-4/5 lg:mx-auto lg:flex lg:items-center">
+      <div className="p-4 md:p-8 lg:px-16 xl:w-4/5 lg:mx-auto lg:flex lg:items-center ">
         {/* Hero  */}
         <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8  mb-12 md:mb-20">
           <span className="text-4xl md:text-5xl text-white mb-0"> Welcome ! </span>
@@ -55,7 +55,7 @@ function Home() {
         </div>
       </div>
       {/* Scroll bottom */}
-      <div className="text-white text-center md:mt-12 animate-bounce">
+      <div className="text-white text-center mt-4 md:mt-12 animate-bounce">
         <span className=""> Scroll </span>
         <div className="flex flex-row justify-center">
           <MdKeyboardDoubleArrowDown size={28} />

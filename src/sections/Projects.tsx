@@ -19,11 +19,11 @@ function Projects () {
             sectionTitle="Projects"
             sectionDescription="The different projects I've worked on so far "
         />
-        <div className='lg: mt-24'>
+        <div className='lg:mt-24'>
             <Carousel>
                 {data.map((value) => {
                     return (
-                    <SwiperSlide className="mb-12 mx-auto" key={value.id}>
+                    <SwiperSlide className="mb-12" key={value.id}>
                         <Card 
                         key={value.id}
                         mainImage={value.mainImage}
