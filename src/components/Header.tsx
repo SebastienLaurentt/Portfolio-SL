@@ -62,6 +62,15 @@ function Header() {
         </li>
         <li>
           <Link
+            to="skills"
+            smooth={true}
+            className="text-white cursor-pointer md:hover:text-cyan-500"
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
             to="contact"
             smooth={true}
             className="text-white cursor-pointer md:hover:text-cyan-500"

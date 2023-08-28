@@ -57,6 +57,16 @@ function BurgerMenu({ setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
         </li>
         <li>
           <Link
+            to="skills"
+            smooth={true}
+            className="text-white text-xl"
+            onClick={() => setBurgerIsOpen(false)}
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
             to="contact"
             smooth={true}
             className="text-white text-xl"
