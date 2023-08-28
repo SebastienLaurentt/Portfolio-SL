@@ -55,7 +55,7 @@ function Home() {
         </div>
       </div>
       {/* Scroll bottom */}
-      <div className="text-white text-center mt-4 md:mt-12 animate-bounce">
+      <div className="text-white text-center  md:mt-12 animate-bounce">
         <span className=""> Scroll </span>
         <div className="flex flex-row justify-center">
           <MdKeyboardDoubleArrowDown size={28} />
