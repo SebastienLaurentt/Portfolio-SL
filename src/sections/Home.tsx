@@ -37,7 +37,7 @@ function Home() {
 
 
           </div>
-          <p className="mb-8">
+          <p className="homeDescription">
             {' '}
             A <strong>cognitive researcher</strong>  who wants to use brain knowledge to make the web more <strong>accessible</strong> {' '}
           </p>

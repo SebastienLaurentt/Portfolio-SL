@@ -75,12 +75,12 @@ function Experiences() {
 
   return (
     <Section id ="experiences" 
-      gradientToBl={false}
+      gradientToBl={true}
       paddingBottom={true}
     >
       <MdSchool size={52} className="mx-auto text-rose-700" />
       <SectionHeader
-        sectionTitle="Experience"
+        sectionTitle="Experiences"
         sectionDescription="Let's see how I went from cognitive research to web development !"
       />
       <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 md:px-4">

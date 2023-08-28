@@ -1,3 +1,4 @@
+import About from '../sections/About';
 import Contact from '../sections/Contact';
 import Experiences from '../sections/Experiences';
 import Home from '../sections/Home';
@@ -7,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Home  />
+      <About />
       <Experiences  />
       <Projects  />
       <Contact  />

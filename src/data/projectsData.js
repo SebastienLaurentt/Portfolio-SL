@@ -35,7 +35,7 @@ const data = [
     ],
     description: 'The first version of my portfolio',
     website: 'https://codit-three.vercel.app/',
-    github:'https://github.com/O-clock-Titanium/projet-codit-front',
+    github:'https://github.com/SebastienLaurentt/Portfolio-SL',
   },
   {
     id: 2,
