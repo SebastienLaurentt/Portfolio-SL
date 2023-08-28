@@ -118,7 +118,7 @@ function Experiences() {
           <span>2022 - 2023</span>
         </button>
       </div>
-      <section className="p-4 md:p-8  w-full text-center mt-12 xl:mt-32 xl:w-4/5 lg:mx-auto lg:flex">
+      <section className="p-4 md:p-8  w-full text-center mt-8 xl:mt-32 xl:w-4/5 lg:mx-auto lg:flex">
         {sectionContent}
       </section>
     </Section>
