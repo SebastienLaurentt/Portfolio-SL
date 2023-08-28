@@ -8,7 +8,7 @@ import Section from '../components/Section';
 function Contact () {
     return (
       <Section id ="contact"  
-        gradientToBl={true}
+        gradientToBl={false}
         paddingBottom={false}
       >
         <div>

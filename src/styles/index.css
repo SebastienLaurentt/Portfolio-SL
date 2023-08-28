@@ -64,3 +64,7 @@
 .homeDescription {
   @apply text-lg md:text-xl text-white mb-8;
 }
+
+.languageName {
+  @apply text-white;
+}
