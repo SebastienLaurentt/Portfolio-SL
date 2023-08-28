@@ -31,7 +31,7 @@ function Experiences() {
           </p>
         </div>
         <div className= "lg:w-2/3 lg:flex lg:justify-end">
-          <img src={brainlogo} alt="An illustration of researchers doing brain research. (Copyright @ https://fr.freepik.com/vecteurs-libre/illustration-concept-chimie-du-cerveau_29654747.htm#&position=2&from_view=user)" className="mt-4 md:mt-8 h-40 md:h-80 mx-auto lg:mx-0  " />
+          <img src={brainlogo} alt="An illustration of researchers doing brain research. (Copyright @ https://fr.freepik.com/vecteurs-libre/illustration-concept-chimie-du-cerveau_29654747.htm#&position=2&from_view=user)" className="mt-4 md:mt-20 lg:mt-0 h-40 md:h-80 mx-auto lg:mx-0  " />
         </div>
       </>
     );
@@ -49,7 +49,7 @@ function Experiences() {
           </p>
         </div>
         <div className= "lg:w-2/3 lg:flex lg:justify-end">
-          <img src={carlogo} alt="An illustration of an individual in a car without a steering wheel because it is an autonomous vehicle. (Copyright @ https://fr.freepik.com/vecteurs-libre/illustration-concept-voiture-autonome_19184615.htm#&position=1&from_view=user)" className="mt-4 md:mt-8 h-40 md:h-80 mx-auto lg:mx-0" />
+          <img src={carlogo} alt="An illustration of an individual in a car without a steering wheel because it is an autonomous vehicle. (Copyright @ https://fr.freepik.com/vecteurs-libre/illustration-concept-voiture-autonome_19184615.htm#&position=1&from_view=user)" className="mt-4 md:mt-16 lg:mt-0 h-40 md:h-80 mx-auto lg:mx-0 " />
         </div>
       </>
     );
@@ -67,7 +67,7 @@ function Experiences() {
           </p>
         </div>
         <div className= "lg:w-2/3 lg:flex lg:justify-end">
-          <img src={computerlogo} alt="An illustration of a laptop used for programming. (Copyright @ https://fr.freepik.com/vecteurs-libre/illustration-concept-codage-main_21864184.htm#&position=0&from_view=user) " className="mt-4 md:mt-12 h-40 md:h-80 mx-auto lg:mx-0" />
+          <img src={computerlogo} alt="An illustration of a laptop used for programming. (Copyright @ https://fr.freepik.com/vecteurs-libre/illustration-concept-codage-main_21864184.htm#&position=0&from_view=user) " className="mt-4 md:mt-16 lg:mt-0 h-40 md:h-80 mx-auto lg:mx-0" />
         </div>
       </>
     );
@@ -118,7 +118,7 @@ function Experiences() {
           <span>2022 - 2023</span>
         </button>
       </div>
-      <section className="p-4 md:p-8  w-full text-center mt-4 lg:mt-20 lg:w-4/5 lg:mx-auto lg:flex">
+      <section className="p-4 md:p-8  w-full text-center mt-4 md:mt-12 xl:mt-32 xl:w-4/5 lg:mx-auto lg:flex">
         {sectionContent}
       </section>
     </Section>
