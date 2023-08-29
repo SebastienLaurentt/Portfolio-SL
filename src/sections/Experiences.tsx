@@ -1,9 +1,11 @@
+
 import React, { useState } from 'react';
 import carlogo from '../assets/carLogo.svg';
 import brainlogo from '../assets/brainLogo.svg';
 import computerlogo from '../assets/computerLogo.svg';
 
 import { MdSchool } from 'react-icons/md';
+import Background from "../components/Background";
 import SectionHeader from '../components/SectionHeader';
 import Section from '../components/Section';
 
@@ -74,54 +76,57 @@ function Experiences() {
   }
 
   return (
-    <Section id ="experiences" 
+    <Background
       gradientToBl={true}
-      paddingBottom={true}
     >
-      <MdSchool size={52} className="mx-auto text-rose-700" />
-      <SectionHeader
-        sectionTitle="Experiences"
-        sectionDescription="Let's see how I went from cognitive research to web development !"
-      />
-      <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 md:px-4">
-        <button
-          className={`${
-            activeButton === 'PhD Student'
-              ? 'bg-cyan-700 text-white'
-              : 'bg-white text-black'
-          } flex flex-col p-2 rounded-lg items-center`}
-          onClick={() => handleButtonClick('PhD Student')}
-        >
-          <span>PhD Student</span>
-          <span>2017 - 2021</span>
-        </button>
-        <button
-          className={`${
-            activeButton === 'Post Doc'
-              ? 'bg-cyan-700 text-white'
-              : 'bg-white text-black'
-          } flex flex-col p-2 rounded-lg items-center`}
-          onClick={() => handleButtonClick('Post Doc')}
-        >
-          <span>Post Doc</span>
-          <span>2021 - 2022</span>
-        </button>
-        <button
-          className={`${
-            activeButton === 'Web Dev'
-              ? 'bg-cyan-700 text-white'
-              : 'bg-white text-black'
-          } flex flex-col p-2 rounded-lg items-center`}
-          onClick={() => handleButtonClick('Web Dev')}
-        >
-          <span>Web Dev</span>
-          <span>2022 - 2023</span>
-        </button>
-      </div>
-      <section className="p-4 md:p-8  w-full text-center mt-8 xl:mt-32 xl:w-4/5 lg:mx-auto lg:flex">
-        {sectionContent}
-      </section>
-    </Section>
+      <Section id ="experiences" 
+        paddingBottom={true}
+      >
+        <MdSchool size={52} className="mx-auto text-rose-700" />
+        <SectionHeader
+          sectionTitle="Experiences"
+          sectionDescription="Let's see how I went from cognitive research to web development !"
+        />
+        <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 md:px-4">
+          <button
+            className={`${
+              activeButton === 'PhD Student'
+                ? 'bg-cyan-700 text-white'
+                : 'bg-white text-black'
+            } flex flex-col p-2 rounded-lg items-center`}
+            onClick={() => handleButtonClick('PhD Student')}
+          >
+            <span>PhD Student</span>
+            <span>2017 - 2021</span>
+          </button>
+          <button
+            className={`${
+              activeButton === 'Post Doc'
+                ? 'bg-cyan-700 text-white'
+                : 'bg-white text-black'
+            } flex flex-col p-2 rounded-lg items-center`}
+            onClick={() => handleButtonClick('Post Doc')}
+          >
+            <span>Post Doc</span>
+            <span>2021 - 2022</span>
+          </button>
+          <button
+            className={`${
+              activeButton === 'Web Dev'
+                ? 'bg-cyan-700 text-white'
+                : 'bg-white text-black'
+            } flex flex-col p-2 rounded-lg items-center`}
+            onClick={() => handleButtonClick('Web Dev')}
+          >
+            <span>Web Dev</span>
+            <span>2022 - 2023</span>
+          </button>
+        </div>
+        <section className="p-4 md:p-8  w-full text-center mt-8 xl:mt-32 xl:w-4/5 lg:mx-auto lg:flex">
+          {sectionContent}
+        </section>
+      </Section>
+    </Background>
   );
 }
 
