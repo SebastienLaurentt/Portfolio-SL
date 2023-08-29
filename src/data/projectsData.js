@@ -40,7 +40,7 @@ const data = [
   {
     id: 2,
     mainImage: '/static/img/codit.png',
-    title: 'Codit',
+    title: 'Soon',
     tags: [
       {
         "name" :"React",
@@ -52,28 +52,25 @@ const data = [
         "name" :"JS",
       },
     ],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    website: 'https://codit-three.vercel.app/',
-    github:'https://github.com/O-clock-Titanium/projet-codit-front',
+    description: 'Lorem ipsum dolor sit amet.',
+    website: '',
+    github:'',
   },
   {
-    id: 2,
+    id: 3,
     mainImage: '/static/img/codit.png',
-    title: 'Codit',
+    title: 'Soon2',
     tags: [
       {
-        "name" :"React",
+        "name" :"PHP",
       },
       {
-        "name" :"Tailwind",
-      },
-      {
-        "name" :"JS",
+        "name" :"Symfony",
       },
     ],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    website: 'https://codit-three.vercel.app/',
-    github:'https://github.com/O-clock-Titanium/projet-codit-front',
+    description: 'Lorem ipsum dolor sit amet.',
+    website: '',
+    github:'',
   },
 ];
 
