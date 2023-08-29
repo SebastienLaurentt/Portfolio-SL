@@ -11,11 +11,11 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import Background from '../components/Background';
 
 
-function Home() {
+function Home( { gradientToBl }: { gradientToBl: boolean })  {
   return (
     
     <Background
-      gradientToBl={true}
+      gradientToBl={gradientToBl}
     >
       <Section 
         paddingBottom={true}

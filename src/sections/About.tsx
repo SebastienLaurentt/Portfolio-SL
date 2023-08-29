@@ -5,10 +5,10 @@ import SectionHeader from "../components/SectionHeader";
 import { BsPersonCircle } from 'react-icons/bs';
 
 
-function About () {
+function About ( { gradientToBl }: { gradientToBl: boolean }) {
     return (
         <Background
-            gradientToBl={false}
+            gradientToBl={gradientToBl}
         >
             <Section id ="about"  
                 paddingBottom={true}

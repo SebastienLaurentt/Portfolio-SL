@@ -8,12 +8,12 @@ import Skills from '../sections/Skills';
 function App() {
   return (
     <div className="App">
-      <Home  />
-      <About />
-      <Experiences  />
-      <Projects  />
-      <Skills />
-      <Contact  />
+      <Home gradientToBl={true} />
+      <About gradientToBl={false}/>
+      <Experiences gradientToBl={true}  />
+      <Projects gradientToBl={false} />
+      <Skills gradientToBl={true} />
+      <Contact gradientToBl={false} />
     </div>
   );
 }

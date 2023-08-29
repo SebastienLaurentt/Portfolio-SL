@@ -6,10 +6,10 @@ import Background from "../components/Background";
 import SectionHeader from '../components/SectionHeader';
 import Section from '../components/Section';
 
-function Contact () {
+function Contact ( { gradientToBl }: { gradientToBl: boolean }) {
     return (
       <Background
-        gradientToBl={false}
+        gradientToBl={gradientToBl}
       >
         <Section id ="contact"  
           paddingBottom={false}

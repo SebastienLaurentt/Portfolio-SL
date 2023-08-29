@@ -4,10 +4,10 @@ import Section from '../components/Section';
 import SectionHeader from '../components/SectionHeader';
 
 
-function Skills () {
+function Skills ( { gradientToBl }: { gradientToBl: boolean }) {
     return (
         <Background
-            gradientToBl={true}
+            gradientToBl={gradientToBl}
         >
             <Section id ="skills"  
                 paddingBottom={true}
