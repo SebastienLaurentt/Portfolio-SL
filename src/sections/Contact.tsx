@@ -5,10 +5,10 @@ import { GrMail } from 'react-icons/gr'
 import SectionHeader from '../components/SectionHeader';
 import Section from '../components/Section';
 
-function Contact () {
+function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
     return (
       <Section id ="contact"  
-        gradientToBl={false}
+        gradientToBl={gradientToBl}
         paddingBottom={false}
       >
         <div>

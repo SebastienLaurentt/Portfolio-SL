@@ -3,10 +3,10 @@ import Section from '../components/Section';
 import SectionHeader from '../components/SectionHeader';
 
 
-function Skills () {
+function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
     return (
         <Section id ="skills"  
-            gradientToBl={true}
+            gradientToBl={gradientToBl}
             paddingBottom={true}
         >
             <ImPower size={52} className="mx-auto text-rose-700" />

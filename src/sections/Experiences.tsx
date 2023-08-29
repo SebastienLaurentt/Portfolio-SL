@@ -8,7 +8,7 @@ import SectionHeader from '../components/SectionHeader';
 import Section from '../components/Section';
 
 
-function Experiences() {
+function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
   const [activeButton, setActiveButton] = useState('PhD Student');
 
   const handleButtonClick = (buttonTitle: string) => {
@@ -75,7 +75,7 @@ function Experiences() {
 
   return (
     <Section id ="experiences" 
-      gradientToBl={true}
+      gradientToBl={gradientToBl}
       paddingBottom={true}
     >
       <MdSchool size={52} className="mx-auto text-rose-700" />

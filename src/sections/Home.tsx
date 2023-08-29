@@ -10,11 +10,11 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 
 
-function Home() {
+function Home ({ gradientToBl }: { gradientToBl: boolean }) {
   return (
     
     <Section 
-      gradientToBl={true}
+      gradientToBl={gradientToBl}
       paddingBottom={true}
     >
       <Header />
