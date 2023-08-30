@@ -77,7 +77,7 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
           );
         })}
       </div>
-      <section className="p-4 md:p-8  w-full text-center mt-8 xl:mt-32 xl:w-4/5 lg:mx-auto lg:flex">
+      <section className="">
         {sectionContent}
       </section>
     </Section>
