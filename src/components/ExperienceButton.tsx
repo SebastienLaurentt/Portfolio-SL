@@ -6,7 +6,7 @@ interface ExperienceButtonProps {
     experienceDate: string;
   }
 
-function ExperiencesButton ( {activeButton, setActiveButton, experienceTitle, experienceDate}: ExperienceButtonProps ) {
+function ExperienceButton ( {activeButton, setActiveButton, experienceTitle, experienceDate}: ExperienceButtonProps ) {
 
 
     const handleButtonClick = (buttonTitle: string) => {
@@ -33,4 +33,4 @@ function ExperiencesButton ( {activeButton, setActiveButton, experienceTitle, ex
     )
 }
 
-export default ExperiencesButton;
+export default ExperienceButton;
