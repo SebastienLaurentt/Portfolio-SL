@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
-import carlogo from '../assets/carLogo.svg';
-import brainlogo from '../assets/brainLogo.svg';
-import computerlogo from '../assets/computerLogo.svg';
+import { useState } from 'react';
+
 
 import { MdSchool } from 'react-icons/md';
 import SectionHeader from '../components/SectionHeader';
 import Section from '../components/Section';
 
-import dataButton from '../data/experiencesData';
-import dataContent from '../data/experienceContent';
+import dataButton from '../data/experienceButtonData';
+import dataContent from '../data/experienceContentData';
 import ExperienceButton from '../components/ExperienceButton';
 import ExperienceContent from '../components/ExperienceContent';
 
