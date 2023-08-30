@@ -35,7 +35,7 @@ function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
                 initial="initial"
                 whileInView='animate'
                 viewport={{
-                    one:true,
+                    once:true,
                 }}
             >
                 <li className=''>
