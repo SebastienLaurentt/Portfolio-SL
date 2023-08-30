@@ -4,10 +4,10 @@ import SectionHeader from "../components/SectionHeader";
 import { BsPersonCircle } from 'react-icons/bs';
 
 
-function About () {
+function About ({ gradientToBl }: { gradientToBl: boolean }) {
     return (
         <Section id ="about"  
-            gradientToBl={false}
+            gradientToBl={gradientToBl}
             paddingBottom={true}
         >
             <BsPersonCircle size={52} className="mx-auto text-rose-700" />

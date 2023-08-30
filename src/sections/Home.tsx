@@ -10,11 +10,11 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 
 
-function Home() {
+function Home ({ gradientToBl }: { gradientToBl: boolean }) {
   return (
     
     <Section 
-      gradientToBl={true}
+      gradientToBl={gradientToBl}
       paddingBottom={true}
     >
       <Header />
@@ -23,20 +23,23 @@ function Home() {
         <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8  mb-12 md:mb-20">
           <span className="text-4xl md:text-5xl text-white mb-0"> Welcome ! </span>
           <h2 className="mb-2 lg:text-left"> I'm Sébastien </h2>
-          <div className='mb-4 flex gap-x-4 justify-center lg:justify-start'>
+          <ul className='mb-4 flex gap-x-4 justify-center lg:justify-start'>
+            <li>
               <a href="https://github.com/SebastienLaurentt" target="blank_">
-                <AiFillGithub size={28} color="white" />
+                <AiFillGithub size={28} color="white" className='md:hover:fill-cyan-500'/>
               </a>
+            </li>
+            <li>
               <a href="https://twitter.com/Seb_webdev" target="blank_">
-                <AiOutlineTwitter size={28} color="white" />
+                <AiOutlineTwitter size={28} color="white" className='md:hover:fill-cyan-500' />
               </a>
+            </li>
+            <li>
               <a href="https://www.linkedin.com/in/s%C3%A9bastien-laurent-3a007328a/" target="blank_">
-                <AiFillLinkedin size={28} color="white" />
+                <AiFillLinkedin size={28} color="white" className='md:hover:fill-cyan-500'/>
               </a>
-
-
-
-          </div>
+            </li>
+          </ul>
           <p className="homeDescription">
             {' '}
             A <strong>cognitive researcher</strong>  who wants to use brain knowledge to make the web more <strong>accessible</strong> {' '}

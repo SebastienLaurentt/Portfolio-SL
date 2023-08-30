@@ -8,10 +8,10 @@ import SectionHeader from '../components/SectionHeader';
 import Section from '../components/Section';
 
 
-function Projects () {
+function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
     return (
         <Section id ="projects"  
-            gradientToBl={false}
+            gradientToBl={gradientToBl}
             paddingBottom={true}
         >
             <MdBuild size={52} className="mx-auto text-rose-700" />
