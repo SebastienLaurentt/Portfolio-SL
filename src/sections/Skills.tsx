@@ -10,13 +10,13 @@ const fadeInAnimationsVariants = {
         opacity:0,
         y:100,
     },
-    animate: {
+    animate: (id: number) => ({
         opacity:1,
         y:0,
         transition:{
-            delay:0.05
-        }
-    },
+            delay:0.15 * id,
+        },
+    }),
 };
 
 function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
@@ -30,26 +30,30 @@ function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
                 sectionTitle="Skills"
                 sectionDescription="The skills that I have developed and that I regularly use"
             />
-            <motion.ul 
+            <ul 
                 className='text-center flex flex-wrap gap-y-8 justify-around mt-16'
-                variants={fadeInAnimationsVariants}
-                initial="initial"
-                whileInView='animate'
-                viewport={{
-                    once:true,
-                }}
             >
-                {data.map((value) => {
+                {data.map((value, id) => {
                     return (
-                        <li className=''>
+                        <motion.li 
+                            className=''
+                            key={id}
+                            variants={fadeInAnimationsVariants}
+                            initial="initial"
+                            whileInView='animate'
+                            viewport={{
+                                once:true,
+                            }}   
+                            custom={id}
+                        >
                             <svg viewBox="0 0 128 128" className='w-32 h-32 mb-2'>
                                 <g dangerouslySetInnerHTML={{ __html: value.data }} />
                             </svg>
                             <span className='languageName'>{value.name}</span>
-                        </li>
+                        </motion.li>
                     );
                 })}
-            </motion.ul>
+            </ul>
         </Section>
     );
   }
