@@ -10,7 +10,7 @@ interface ExperienceContentProps {
 
 function ExperienceContent ( {title, location, description, moreDescription, srcImg, altImg}: ExperienceContentProps ) {
     return(
-        <div>
+        <div className="lg: flex">
             <div className='lg:w-1/2'>
                 <h3 className="mb-0">{title}</h3>
                 <h4 className="">{location}</h4>
