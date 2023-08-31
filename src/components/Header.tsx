@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import { IoMdMenu } from 'react-icons/io';
 import BurgerMenu from './MenuBurger';
 import { Link } from 'react-scroll';
+import Nav from './Nav';
+
+
 
 function Header() {
   
@@ -32,53 +35,7 @@ function Header() {
           />
         </div>
       <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen}/>
-      <ul className="hidden md:flex text-slate-900 gap-6 lg:gap-12 ">
-        <li>
-          <Link
-              to="about"
-              smooth={true} // Active le défilement fluide
-              className="text-white cursor-pointer md:hover:text-cyan-500"
-            >
-              About
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="experiences"
-            smooth={true} // Active le défilement fluide
-            className="text-white cursor-pointer md:hover:text-cyan-500"
-          >
-            Experiences
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="projects"
-            smooth={true}
-            className="text-white cursor-pointer md:hover:text-cyan-500"
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="skills"
-            smooth={true}
-            className="text-white cursor-pointer md:hover:text-cyan-500"
-          >
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="contact"
-            smooth={true}
-            className="text-white cursor-pointer md:hover:text-cyan-500"
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
+      <Nav />
     </header>
     );
   }
