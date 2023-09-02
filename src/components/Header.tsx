@@ -36,7 +36,6 @@ function Header() {
           />
         </div>
       <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen}/>
-      <nav className='hidden'>
             <ul className="md:flex text-slate-900 gap-6 lg:gap-12 ">
                 {data.map((value) => {
                     return (
@@ -52,7 +51,6 @@ function Header() {
                     );
                 })}
             </ul>
-        </nav>
     </header>
     );
   }
