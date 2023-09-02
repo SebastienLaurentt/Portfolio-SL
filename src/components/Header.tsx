@@ -36,7 +36,7 @@ function Header() {
           />
         </div>
       <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen}/>
-            <ul className="md:flex text-slate-900 gap-6 lg:gap-12 ">
+            <ul className="hidden md:flex text-slate-900 gap-6 lg:gap-12 ">
                 {data.map((value) => {
                     return (
                         <li>
