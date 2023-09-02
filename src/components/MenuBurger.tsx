@@ -2,6 +2,8 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 import { Link } from 'react-scroll';
 
+import data from '../data/navData'
+
 interface BurgerMenuProps {
   setBurgerIsOpen: Function;
   burgerIsOpen: boolean;
@@ -21,64 +23,44 @@ function BurgerMenu({ setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
         className={'absolute top-14 right-14 fill-white-600 cursor-pointer'}
         onClick={() => setBurgerIsOpen(false)}
       />
-      <ul
-        className="text-slate-900 flex flex-col gap-12 text-center text-xl mt-12"
-        onClick={() => setBurgerIsOpen(false)}
-      >
-        <li>
-          <Link
-            to="about"
-            smooth={true} // Active le défilement fluide
-            className="text-white text-xl"
-            onClick={() => setBurgerIsOpen(false)}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="experiences"
-            smooth={true} // Active le défilement fluide
-            className="text-white text-xl"
-            onClick={() => setBurgerIsOpen(false)}
-          >
-            Experiences
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="projects"
-            smooth={true}
-            className="text-white text-xl"
-            onClick={() => setBurgerIsOpen(false)}
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="skills"
-            smooth={true}
-            className="text-white text-xl"
-            onClick={() => setBurgerIsOpen(false)}
-          >
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="contact"
-            smooth={true}
-            className="text-white text-xl"
-            onClick={() => setBurgerIsOpen(false)}
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
+      <nav>
+        <ul
+          className="text-slate-900 flex flex-col gap-12 text-center text-xl mt-12"
+          onClick={() => setBurgerIsOpen(false)}
+        >
+            {data.map((value) => {
+                    return (
+                        <li>
+                            <Link
+                                to={value.to}
+                                smooth={true} 
+                                className="text-white text-xl"
+                                onClick={() => setBurgerIsOpen(false)}
+                                >
+                                {value.content}
+                            </Link>
+                        </li>
+                    );
+                })}
+        </ul>
+      </nav>
+
     </div>
   );
 }
 
 export default BurgerMenu;
 
+{data.map((value) => {
+  return (
+      <li>
+          <Link
+              to={value.to}
+              smooth={true} 
+              className="text-white cursor-pointer md:hover:text-cyan-500"
+              >
+              {value.content}
+          </Link>
+      </li>
+  );
+})}
