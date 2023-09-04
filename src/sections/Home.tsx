@@ -21,22 +21,22 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
       <div className="p-4 md:p-8 lg:px-16 xl:w-4/5 lg:mx-auto lg:flex lg:items-center ">
         {/* Hero  */}
         <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8  mb-12 md:mb-20">
-          <span className="text-4xl md:text-5xl text-white mb-0"> Welcome ! </span>
+          <span className="text-4xl md:text-5xl mb-0"> Welcome ! </span>
           <h2 className="mb-2 lg:text-left"> I'm Sébastien </h2>
           <ul className='mb-4 flex gap-x-4 justify-center lg:justify-start'>
-            <li>
+            <li className=''>
               <a href="https://github.com/SebastienLaurentt" target="blank_">
-                <AiFillGithub size={28} color="white" className='md:hover:fill-cyan-500'/>
+                <AiFillGithub size={28}  className='md:hover:fill-cyan-500'/>
               </a>
             </li>
             <li>
               <a href="https://twitter.com/Seb_webdev" target="blank_">
-                <AiOutlineTwitter size={28} color="white" className='md:hover:fill-cyan-500' />
+                <AiOutlineTwitter size={28}  className='md:hover:fill-cyan-500' />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/s%C3%A9bastien-laurent-3a007328a/" target="blank_">
-                <AiFillLinkedin size={28} color="white" className='md:hover:fill-cyan-500'/>
+                <AiFillLinkedin size={28} className='md:hover:fill-cyan-500'/>
               </a>
             </li>
           </ul>
@@ -45,7 +45,7 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
             A <strong>cognitive researcher</strong>  who wants to use brain knowledge to make the web more <strong>accessible</strong> {' '}
           </p>
           <a
-            className="text-white bg-cyan-700 text-md md:text-lg p-4 rounded-full"
+            className="text-white bg-cyan-800 md:hover:bg-cyan-500 text-md md:text-lg p-4 rounded-full"
             href={CvFile}
             download ="SébastienLaurent_CV.pdf"
           >
@@ -58,7 +58,7 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
         </div>
       </div>
       {/* Scroll bottom */}
-      <div className="text-white text-center  md:mt-12 animate-bounce">
+      <div className="text-center  md:mt-12 animate-bounce">
         <span className=""> Scroll </span>
         <div className="flex flex-row justify-center">
           <MdKeyboardDoubleArrowDown size={28} />
