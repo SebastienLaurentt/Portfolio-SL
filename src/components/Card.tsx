@@ -29,7 +29,7 @@ function Card({ mainImage, title, tags, description, website, github }: CardProp
                         </span>
                     ))}
                 </div>
-                <p className="md:h-16 text-lg xl:text-xl ">{description}</p>
+                <p className=" text-white md:h-16 text-lg xl:text-xl ">{description}</p>
                 <div className="text-gray-300 flex gap-x-4 italic">
                     <a href={`${website}`}> View Website  </a>
                     <a href={`${github}`}> View GitHub  </a>

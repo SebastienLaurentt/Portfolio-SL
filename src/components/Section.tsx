@@ -1,3 +1,8 @@
+
+import { useContext } from "react";
+import { DarkModeContext } from "../contexts/DarkModeProvider";
+
+
 interface SectionProps {
     id?: string; 
     gradientToBl: boolean;
@@ -23,8 +28,16 @@ function Section ({
     ? 'pb-28 md:pb-32'
     : '';
 
+    const {darkMode} = useContext(DarkModeContext);
+
+    const isDarkMode = darkMode 
+
+    ? isGradientToBl
+    : 'white-theme';
+
+
     return(
-        <section id= {`${id}`} className= {` ${isGradientToBl} ${isPaddingBottom} ${className} py-4 md:py-8 px-8`}>
+        <section id= {`${id}`} className= {` ${isDarkMode}  ${isPaddingBottom} ${className} py-4 md:py-8 px-8 text-white`}>
             <>{children}</>
         </section>
 

@@ -5,6 +5,7 @@
 @layer base {
   html {
     font-family: 'Playfair Display', serif;
+    color:white;
   }
 
   h1 {
@@ -20,7 +21,7 @@
   }
 
   h4 {
-    @apply  italic mb-4 text-white text-md md:text-lg;
+    @apply  italic mb-4  text-md md:text-lg;
   }
 
   h5 {
@@ -28,7 +29,7 @@
   }
 
   p {
-    @apply text-base md:text-xl text-white mb-4;
+    @apply text-base md:text-xl  mb-4;
   }
 
   span {
@@ -54,7 +55,7 @@
 
 /* Custom classes */
 .sectionDescription {
-  @apply text-lg md:text-xl text-white mb-4 text-center mb-8;
+  @apply text-lg md:text-xl  mb-4 text-center mb-8;
 }
 
 .no-scroll {
@@ -62,9 +63,13 @@
 }
 
 .homeDescription {
-  @apply text-lg md:text-xl text-white mb-8;
+  @apply text-lg md:text-xl mb-8;
 }
 
-.languageName {
-  @apply text-white;
+
+
+.white-theme {
+  background-color: white;
+  color: black;
+
 }

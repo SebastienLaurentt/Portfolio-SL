@@ -20,11 +20,11 @@ function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
           <div className='flex justify-center gap-x-6 mb-8'>
             <div>
               <ImLocation2 size={52} className="mx-auto text-emerald-500 mb-2" />
-              <span className='text-white'>Lyon, France </span>
+              <span className=''>Lyon, France </span>
             </div>
             <div>
               <GrMail size={52} className="mx-auto text-emerald-500 mb-2" />
-              <span className='text-white'> Slaurent.26@gmail.com </span>
+              <span className=''> Slaurent.26@gmail.com </span>
             </div>
           </div>
         </div>
