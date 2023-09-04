@@ -6,7 +6,7 @@ import { DarkModeContext } from "../contexts/DarkModeProvider";
 interface SectionProps {
     id?: string; 
     gradientToBl: boolean;
-    paddingBottom: boolean
+    paddingBottom: boolean;
     className?: string;
     children: React.ReactNode;
   }
@@ -28,7 +28,13 @@ function Section ({
     ? 'pb-28 md:pb-32'
     : '';
 
-    const {darkMode} = useContext(DarkModeContext);
+    const context = useContext(DarkModeContext);
+
+    if (!context) {
+      throw new Error("DarkModeContext is not available.");
+    }
+  
+    const darkMode= context;
 
     const isDarkMode = darkMode 
 

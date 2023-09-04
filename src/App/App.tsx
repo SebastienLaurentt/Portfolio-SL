@@ -10,7 +10,7 @@ import { DarkModeContext } from "../contexts/DarkModeProvider";
 
 function App() {
 
-  const {darkMode} = useContext(DarkModeContext);
+  const darkMode = useContext(DarkModeContext);
 
   return (
     <div className={`App ${darkMode && 'dark-theme'}`}>
