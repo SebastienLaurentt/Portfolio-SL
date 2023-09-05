@@ -9,8 +9,16 @@ import { AiFillGithub } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 
+import { LanguageContext } from "../contexts/LanguageProvider";
+import { useContext } from 'react';
+
 
 function Home ({ gradientToBl }: { gradientToBl: boolean }) {
+
+  const context = useContext(LanguageContext);
+
+  const { language } = context;
+
   return (
     
     <Section 
@@ -21,8 +29,12 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
       <div className="p-4 md:p-8 lg:px-16 xl:w-4/5 lg:mx-auto lg:flex lg:items-center ">
         {/* Hero  */}
         <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8  mb-12 md:mb-20">
-          <span className="text-4xl md:text-5xl mb-0"> Welcome ! </span>
-          <h2 className="mb-2 lg:text-left"> I'm Sébastien </h2>
+          <span className="text-4xl md:text-5xl mb-0"> 
+          { language ? "Welcome !" : "Bienvenue ! "}
+          </span>
+          <h2 className="mb-2 lg:text-left"> 
+            { language ? "I'm Sébastien" : "Je suis Sébastien"} 
+          </h2>
           <ul className='mb-4 flex gap-x-4 justify-center lg:justify-start'>
             <li className=''>
               <a href="https://github.com/SebastienLaurentt" target="blank_">

@@ -3,6 +3,8 @@ import { IoMdMenu } from 'react-icons/io';
 import BurgerMenu from './MenuBurger';
 import { Link } from 'react-scroll';
 import DarkModeToggle from './DarkModeToggle'
+import LanguageToggle from './LanguageToggle'
+
 
 import data from '../data/navData'
 
@@ -49,6 +51,9 @@ function Header() {
             })}
         </ul>
         <div className='flex items-center gap-x-2'>
+        <span className='flex'>
+            <LanguageToggle />
+          </span>
           <span className='flex'>
             <DarkModeToggle />
           </span>
