@@ -28,7 +28,11 @@ function Header() {
             <span className="font-bold text-emerald-500"> Web Developer</span>
         </div>
 
-      <BurgerMenu setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen}/>
+      <BurgerMenu 
+        setBurgerIsOpen={setBurgerIsOpen} 
+        burgerIsOpen={burgerIsOpen}
+        gradientToBl={true}
+      />
         <ul className="hidden md:flex  gap-6 lg:gap-12 ">
             {data.map((value) => {
                 return (
