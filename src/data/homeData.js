@@ -8,7 +8,7 @@ const data = {
     french:{
         opening: "Bienvenue ! ",
         presentation: "Je suis Sébastien",
-        description: 'Un <strong>chercheur en Sciences Cognitives</strong>  qui veut utiliser les connaissances du cerveau pour rendre le web plus <strong>accessible</strong>',
+        description: 'Un <strong>chercheur</strong>  qui veut utiliser les connaissances du cerveau pour rendre le web plus <strong>accessible</strong>',
         cv: 'TELECHARGER CV'
     },
 };

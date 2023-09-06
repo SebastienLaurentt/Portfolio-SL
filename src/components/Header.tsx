@@ -38,7 +38,7 @@ function Header() {
 
     return (
       <header className="flex justify-between items-center p-8 lg:py-16  xl:w-4/5 lg:mx-auto ">
-        <div className="">
+        <div className="hidden lg:flex">
             <span className="">SL -</span>
             <span className="font-bold text-emerald-500"> Web Developer</span>
         </div>
@@ -63,13 +63,15 @@ function Header() {
                 );
             })}
         </ul>
-        <div className='flex items-center gap-x-2'>
-        <span className='flex'>
+        <div className='flex flex-row-reverse justify-between w-full md:w-1/5'>
+          <div className='flex gap-x-4'>
+            <span className='flex'>
             <LanguageToggle />
-          </span>
-          <span className='flex'>
-            <DarkModeToggle />
-          </span>
+            </span>
+            <span className='flex'>
+              <DarkModeToggle />
+            </span>
+          </div>
           <div className="md:hidden">
             <IoMdMenu
               size={32}

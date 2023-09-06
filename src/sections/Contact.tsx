@@ -37,7 +37,7 @@ function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
 
               <SectionHeader
                 sectionTitle="Contact"
-                sectionDescription="Vous avez des questions ou des requêtes ? Contactez moi !"
+                sectionDescription="Vous avez des questions ou  requêtes ? Contactez moi !"
               />
           }
 

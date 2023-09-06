@@ -40,7 +40,7 @@ function BurgerMenu({ gradientToBl, setBurgerIsOpen, burgerIsOpen}: BurgerMenuPr
       >
         <AiOutlineCloseCircle
           size={32}
-          className={'absolute top-14 right-14  cursor-pointer'}
+          className={'absolute top-12 left-16  cursor-pointer'}
           onClick={() => setBurgerIsOpen(false)}
         />
         <nav>

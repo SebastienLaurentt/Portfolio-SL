@@ -29,7 +29,7 @@ const data = {
         phdStudent: {
             title: 'Doctorat',
             location: 'Université Gustave Eiffel',
-            description: "Le but de cette thèse était d'<strong class='text-emerald-500'>adapter</strong> l'aide à l'apprentissage du Code de la route français pour les personnes sourdes afin de <strong class='text-emerald-500'>correspondre</strong> à leur <strong class='text-emerald-500'>profil cognitif</strong>.",
+            description: "Le but de cette thèse était d'<strong class='text-emerald-500'>adapter</strong> le support d'apprentissage du Code de la route français pour les personnes sourdes afin de <strong class='text-emerald-500'>correspondre</strong> à leur <strong class='text-emerald-500'>profil cognitif</strong>.",
             moreDescription: "Des expériences ont été menées pour recueillir des données comportementales et physiologiques à l'aide de l'<strong class='text-emerald-500'>oculométrie</strong> et de l'<strong class='text-emerald-500'>activité cérébrale</strong>.",
             srcImg: '/static/img/brainLogo.svg',
             altImg: "Une illustration de chercheurs effectuant des recherches sur le cerveau. (Droit d'auteur @ https://fr.freepik.com/vecteurs-libre/illustration-concept-chimie-du-cerveau_29654747.htm#&position=2&from_view=user)",
@@ -37,8 +37,8 @@ const data = {
         postDoc: {
             title: 'Post Doc',
             location: 'Université Gustave Eiffel',
-            description: "Cette position était liée à un projet <strong class='text-emerald-500'>européen</strong> visant à évaluer l'<strong class='text-emerald-500'>acceptabilité</strong> des <strong class='text-emerald-500'>véhicules autonomes</strong> pour les jeunes et les personnes âgées.",
-            moreDescription: "Un <strong class='text-emerald-500'>simulateur de conduite</strong> et la <strong class='text-emerald-500'>réalité virtuelle</strong> ont été utilisés pour immerger les participants dans divers <strong class='text-emerald-500'>scénarios</strong> afin de recueillir leurs <strong class='text-emerald-500'>impressions</strong>.",
+            description: "Cette position était liée à un projet <strong class='text-emerald-500'>européen</strong> visant à évaluer l'<strong class='text-emerald-500'>acceptabilité</strong> des <strong class='text-emerald-500'>véhicules autonomes</strong> pour les personnes jeunes et âgées.",
+            moreDescription: "Un <strong class='text-emerald-500'>simulateur de conduite</strong> et de la <strong class='text-emerald-500'>réalité virtuelle</strong> ont été utilisés pour immerger les participants dans divers <strong class='text-emerald-500'>scénarios</strong> afin de recueillir leurs <strong class='text-emerald-500'>impressions</strong>.",
             srcImg: '/static/img/carLogo.svg',
             altImg: "Une illustration d'une personne dans une voiture sans volant car il s'agit d'un véhicule autonome. (Droit d'auteur @ https://fr.freepik.com/vecteurs-libre/illustration-concept-voiture-autonome_19184615.htm#&position=1&from_view=user)",
         },
