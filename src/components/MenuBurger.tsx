@@ -20,6 +20,10 @@ function BurgerMenu({ gradientToBl, setBurgerIsOpen, burgerIsOpen}: BurgerMenuPr
 
   const context = useContext(EnglishLanguageContext);
 
+  if (!context) {
+    throw new Error("EnglishLanguageContext is not available.");
+  }
+
   const { englishLanguage } = context;
 
   const dataLanguage = englishLanguage ? data.english : data.french;

@@ -30,7 +30,7 @@ const data = {
         {
             id: 0,
             to: 'about',
-            content: 'A propos',
+            content: 'Infos',
         },
         {
             id: 1,

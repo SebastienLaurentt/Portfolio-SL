@@ -16,6 +16,10 @@ function Card({ mainImage, title, tags, description, website, github }: CardProp
 
     const context = useContext(EnglishLanguageContext);
 
+    if (!context) {
+        throw new Error("EnglishLanguageContext is not available.");
+    }
+
     const { englishLanguage } = context;
 
     return (

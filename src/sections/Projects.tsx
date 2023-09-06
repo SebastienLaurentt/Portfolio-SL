@@ -15,6 +15,10 @@ function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
 
     const context = useContext(EnglishLanguageContext);
 
+    if (!context) {
+        throw new Error("EnglishLanguageContext is not available.");
+    }
+
     const { englishLanguage } = context;
 
     const dataLanguage = englishLanguage ? data.english : data.french;
@@ -36,7 +40,7 @@ function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
 
                 <SectionHeader
                     sectionTitle="Projets"
-                    sectionDescription="Les différentes projets sur lesquels j'ai travaillé jusqu'à présent"
+                    sectionDescription="Les différents projets sur lesquels j'ai travaillé jusqu'à présent"
                 />
             }
 

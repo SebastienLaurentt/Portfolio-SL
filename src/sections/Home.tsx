@@ -19,6 +19,10 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
 
   const context = useContext(EnglishLanguageContext);
 
+  if (!context) {
+    throw new Error("EnglishLanguageContext is not available.");
+  }
+
   const { englishLanguage } = context;
 
   const dataLanguage = englishLanguage ? data.english : data.french;

@@ -11,6 +11,10 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
 
     const context = useContext(EnglishLanguageContext);
 
+    if (!context) {
+        throw new Error("EnglishLanguageContext is not available.");
+    }
+
     const { englishLanguage } = context;
 
 
