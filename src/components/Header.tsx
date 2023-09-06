@@ -8,6 +8,8 @@ import LanguageToggle from './LanguageToggle'
 
 import data from '../data/navData'
 
+import { EnglishLanguageContext } from "../contexts/LanguageProvider";
+import { useContext } from 'react';
 
 
 function Header() {
@@ -23,6 +25,13 @@ function Header() {
   }, [burgerIsOpen]);
 
 
+  const context = useContext(EnglishLanguageContext);
+
+  const { englishLanguage } = context;
+
+  const dataLanguage = englishLanguage ? data.english : data.french;
+
+
     return (
       <header className="flex justify-between items-center p-8 lg:py-16  xl:w-4/5 lg:mx-auto ">
         <div className="">
@@ -36,7 +45,7 @@ function Header() {
         gradientToBl={true}
       />
         <ul className="hidden md:flex  gap-6 lg:gap-12 ">
-            {data.map((value) => {
+            {dataLanguage.map((value) => {
                 return (
                     <li>
                         <Link

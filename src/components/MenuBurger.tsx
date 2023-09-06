@@ -5,6 +5,9 @@ import { Link } from 'react-scroll';
 import data from '../data/navData'
 import Section from './Section';
 
+import { EnglishLanguageContext } from "../contexts/LanguageProvider";
+import { useContext } from 'react';
+
 interface BurgerMenuProps {
   gradientToBl: boolean;
   setBurgerIsOpen: Function;
@@ -14,6 +17,12 @@ interface BurgerMenuProps {
 function BurgerMenu({ gradientToBl, setBurgerIsOpen, burgerIsOpen}: BurgerMenuProps) {
 
   const position = burgerIsOpen ? 'top-0 h-screen no-scroll' : '-top-full h-0';
+
+  const context = useContext(EnglishLanguageContext);
+
+  const { englishLanguage } = context;
+
+  const dataLanguage = englishLanguage ? data.english : data.french;
 
   return (
     <Section   
@@ -35,7 +44,7 @@ function BurgerMenu({ gradientToBl, setBurgerIsOpen, burgerIsOpen}: BurgerMenuPr
             className="flex flex-col gap-12 text-center text-xl mt-12"
             onClick={() => setBurgerIsOpen(false)}
           >
-              {data.map((value) => {
+              {dataLanguage.map((value) => {
                       return (
                           <li>
                               <Link
@@ -59,16 +68,3 @@ function BurgerMenu({ gradientToBl, setBurgerIsOpen, burgerIsOpen}: BurgerMenuPr
 
 export default BurgerMenu;
 
-{data.map((value) => {
-  return (
-      <li>
-          <Link
-              to={value.to}
-              smooth={true} 
-              className="text-white cursor-pointer md:hover:text-cyan-500"
-              >
-              {value.content}
-          </Link>
-      </li>
-  );
-})}
