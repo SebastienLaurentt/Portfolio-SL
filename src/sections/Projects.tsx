@@ -17,6 +17,8 @@ function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
 
     const { englishLanguage } = context;
 
+    const dataLanguage = englishLanguage ? data.english : data.french;
+
     return (
         <Section id ="projects"  
             gradientToBl={gradientToBl}
@@ -41,7 +43,7 @@ function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
 
             <div className='lg:mt-24'>
                 <Carousel>
-                    {data.map((value) => {
+                    {dataLanguage.map((value) => {
                         return (
                         <SwiperSlide className="mb-12" key={value.id}>
                             <Card 

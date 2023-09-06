@@ -1,3 +1,6 @@
+import { EnglishLanguageContext } from "../contexts/LanguageProvider";
+import { useContext } from 'react';
+
 interface CardProps {
     mainImage: string;
     title: string;
@@ -10,6 +13,11 @@ interface CardProps {
   }
 
 function Card({ mainImage, title, tags, description, website, github }: CardProps) {
+
+    const context = useContext(EnglishLanguageContext);
+
+    const { englishLanguage } = context;
+
     return (
         <div className="flex flex-col bg-gray-700  rounded-lg p-4 ">
             <div className=" mb-4 flex justify-center">
@@ -30,10 +38,23 @@ function Card({ mainImage, title, tags, description, website, github }: CardProp
                     ))}
                 </div>
                 <p className=" text-white md:h-16 text-lg xl:text-xl ">{description}</p>
-                <div className="text-gray-300 flex gap-x-4 italic">
-                    <a href={`${website}`}> View Website  </a>
-                    <a href={`${github}`}> View GitHub  </a>
-                </div>
+                { englishLanguage ? 
+
+                    <div className="text-gray-300 flex gap-x-4 italic">
+                        <a href={`${website}`}> View Website  </a>
+                        <a href={`${github}`}> View GitHub  </a>
+                    </div>
+                
+                :
+
+                    <div className="text-gray-300 flex gap-x-4 italic">
+                        <a href={`${website}`}> Voir Site </a>
+                        <a href={`${github}`}> Voir GitHub  </a>
+                    </div>
+
+
+                }
+
             </div>
         </div>
     );
