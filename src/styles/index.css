@@ -62,14 +62,7 @@
   overflow:hidden;
 }
 
-.homeDescription {
-  @apply text-lg md:text-xl mb-8;
-}
-
-
-
 .white-theme {
   background-color: #FFFAFA;
   color: black;
-
 }

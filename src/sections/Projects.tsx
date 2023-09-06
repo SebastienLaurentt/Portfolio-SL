@@ -7,21 +7,47 @@ import { MdBuild } from 'react-icons/md';
 import SectionHeader from '../components/SectionHeader';
 import Section from '../components/Section';
 
+import { EnglishLanguageContext } from "../contexts/LanguageProvider";
+import { useContext } from 'react';
+
 
 function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
+
+    const context = useContext(EnglishLanguageContext);
+
+    if (!context) {
+        throw new Error("EnglishLanguageContext is not available.");
+    }
+
+    const { englishLanguage } = context;
+
+    const dataLanguage = englishLanguage ? data.english : data.french;
+
     return (
         <Section id ="projects"  
             gradientToBl={gradientToBl}
             paddingBottom={true}
         >
             <MdBuild size={52} className="mx-auto text-rose-700" />
-            <SectionHeader
-                sectionTitle="Projects"
-                sectionDescription="The different projects I've worked on so far "
-            />
+
+            { englishLanguage ? 
+                <SectionHeader
+                    sectionTitle="Projects"
+                    sectionDescription="The different projects I've worked on so far "
+                />
+
+            :
+
+                <SectionHeader
+                    sectionTitle="Projets"
+                    sectionDescription="Les différents projets sur lesquels j'ai travaillé jusqu'à présent"
+                />
+            }
+
+
             <div className='lg:mt-24'>
                 <Carousel>
-                    {data.map((value) => {
+                    {dataLanguage.map((value) => {
                         return (
                         <SwiperSlide className="mb-12" key={value.id}>
                             <Card 
