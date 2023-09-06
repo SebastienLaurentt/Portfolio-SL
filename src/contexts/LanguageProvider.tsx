@@ -1,33 +1,33 @@
 import { createContext, useState, useEffect } from "react";
 
 interface LanguageContextType {
-    language: boolean;
-    toggleLanguage: () => void;
+    englishLanguage: boolean;
+    toggleEnglishLanguage: () => void;
 }
 
 interface LanguageProviderProps {
   children: React.ReactNode;
 }
 
-export const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+export const EnglishLanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export default function LanguageProvider ({ children }: LanguageProviderProps) {
-  const [language, setLanguage] = useState(() => {
-    const storedLanguage = localStorage.getItem("language");
-    return storedLanguage ? JSON.parse(storedLanguage) : true;
+  const [englishLanguage, setEnglishLanguage] = useState(() => {
+    const storedEnglishLanguage = localStorage.getItem("englishLanguage");
+    return storedEnglishLanguage ? JSON.parse(storedEnglishLanguage) : true;
   });
 
   useEffect(() => {
-    localStorage.setItem("language", JSON.stringify(language));
-  }, [language]);
+    localStorage.setItem("englishLanguage", JSON.stringify(englishLanguage));
+  }, [englishLanguage]);
 
-  function toggleLanguage() {
-    setLanguage(!language);
+  function toggleEnglishLanguage() {
+    setEnglishLanguage(!englishLanguage);
   }
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage }}>
+    <EnglishLanguageContext.Provider value={{ englishLanguage, toggleEnglishLanguage }}>
       {children}
-    </LanguageContext.Provider>
+    </EnglishLanguageContext.Provider>
   );
 }

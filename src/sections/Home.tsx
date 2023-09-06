@@ -9,15 +9,19 @@ import { AiFillGithub } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 
-import { LanguageContext } from "../contexts/LanguageProvider";
+import { EnglishLanguageContext } from "../contexts/LanguageProvider";
 import { useContext } from 'react';
+
+import data from '../data/homeData'
 
 
 function Home ({ gradientToBl }: { gradientToBl: boolean }) {
 
-  const context = useContext(LanguageContext);
+  const context = useContext(EnglishLanguageContext);
 
-  const { language } = context;
+  const { englishLanguage } = context;
+
+  const dataLanguage = englishLanguage ? data.english : data.french;
 
   return (
     
@@ -30,10 +34,10 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
         {/* Hero  */}
         <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8  mb-12 md:mb-20">
           <span className="text-4xl md:text-5xl mb-0"> 
-          { language ? "Welcome !" : "Bienvenue ! "}
+           {dataLanguage.opening}
           </span>
           <h2 className="mb-2 lg:text-left"> 
-            { language ? "I'm Sébastien" : "Je suis Sébastien"} 
+            {dataLanguage.presentation}
           </h2>
           <ul className='mb-4 flex gap-x-4 justify-center lg:justify-start'>
             <li className=''>
@@ -52,16 +56,16 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
               </a>
             </li>
           </ul>
-          <p className="homeDescription">
-            {' '}
-            A <strong>cognitive researcher</strong>  who wants to use brain knowledge to make the web more <strong>accessible</strong> {' '}
-          </p>
+          <p 
+            className="text-lg md:text-xl mb-8" 
+            dangerouslySetInnerHTML={{ __html: dataLanguage.description }} 
+          />
           <a
             className="text-white bg-cyan-800 md:hover:bg-cyan-500 text-md md:text-lg p-4 rounded-full"
             href={CvFile}
             download ="SébastienLaurent_CV.pdf"
           >
-            DOWNLOAD CV
+            {dataLanguage.cv}
           </a>
         </div>
         {/* Home logo */}
