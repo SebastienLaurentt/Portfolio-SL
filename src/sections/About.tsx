@@ -20,10 +20,20 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
             paddingBottom={true}
         >
             <BsPersonCircle size={52} className="mx-auto text-rose-700" />
-            <SectionHeader
-                sectionTitle="About me"
-                sectionDescription="A small introduction about me"
-            />
+            { englishLanguage ? 
+                <SectionHeader
+                    sectionTitle="About me"
+                    sectionDescription="A small introduction about me"
+                />
+
+                :
+
+                <SectionHeader
+                    sectionTitle="Qui suis je ?"
+                    sectionDescription="Une brève introduction me concernant"
+                />
+            }
+
             <div className="mt-12 lg:mt-16 lg:mx-auto lg:flex lg:flex-row-reverse lg:items-center lg:w-4/5 ">
                 <div className="lg:w-1/3">
                     <div

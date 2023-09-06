@@ -35,7 +35,7 @@ const data = {
         {
             id: 1,
             to: 'experiences',
-            content: 'Experiences',
+            content: 'Expériences',
         },
         {
             id: 2,

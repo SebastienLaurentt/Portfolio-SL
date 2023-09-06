@@ -5,7 +5,16 @@ import { GrMail } from 'react-icons/gr'
 import SectionHeader from '../components/SectionHeader';
 import Section from '../components/Section';
 
+import { EnglishLanguageContext } from "../contexts/LanguageProvider";
+import { useContext } from 'react';
+
 function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
+
+    const context = useContext(EnglishLanguageContext);
+
+    const { englishLanguage } = context;
+
+
     return (
       <Section id ="contact"  
         gradientToBl={gradientToBl}
@@ -13,10 +22,21 @@ function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
       >
         <div>
           <SiMinutemailer size={52} className="mx-auto text-rose-700" />
-          <SectionHeader
-            sectionTitle="Contact"
-            sectionDescription="Do you have any questions or requests? Please feel free to contact me !"
-          />
+
+          { englishLanguage ? 
+              <SectionHeader
+                sectionTitle="Contact"
+                sectionDescription="Do you have any questions or requests? Please feel free to contact me !"
+              />
+
+            :
+
+              <SectionHeader
+                sectionTitle="Contact"
+                sectionDescription="Vous avez des questions ou des requêtes ? Contactez moi !"
+              />
+          }
+
           <div className='flex justify-center gap-x-6 mb-8'>
             <div>
               <ImLocation2 size={52} className="mx-auto text-emerald-500 mb-2" />

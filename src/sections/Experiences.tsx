@@ -70,10 +70,21 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
       paddingBottom={true}
     >
       <MdSchool size={52} className="mx-auto text-rose-700" />
-      <SectionHeader
-        sectionTitle="Experiences"
-        sectionDescription="Let's see how I went from cognitive research to web development !"
-      />
+      { englishLanguage ? 
+        <SectionHeader
+          sectionTitle="Experiences"
+          sectionDescription="Let's see how I went from cognitive research to web development !"
+        />
+
+        :
+
+        <SectionHeader
+          sectionTitle="Expériences"
+          sectionDescription="Regardons comment je suis passé de la recherche au développement web !"
+        />
+      }
+      
+
       <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 md:px-4">
         {dataButtonLanguage.map((value) => {
           return (

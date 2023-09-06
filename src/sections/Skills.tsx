@@ -5,6 +5,9 @@ import SectionHeader from '../components/SectionHeader';
 import data from '../data/skillsData';
 import { motion } from 'framer-motion';
 
+import { EnglishLanguageContext } from "../contexts/LanguageProvider";
+import { useContext } from 'react';
+
 const fadeInAnimationsVariants = {
     initial: {
         opacity:0,
@@ -20,16 +23,32 @@ const fadeInAnimationsVariants = {
 };
 
 function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
+
+    const context = useContext(EnglishLanguageContext);
+
+    const { englishLanguage } = context;
+
     return (
         <Section id ="skills"  
             gradientToBl={gradientToBl}
             paddingBottom={true}
         >
             <ImPower size={52} className="mx-auto text-rose-700" />
-            <SectionHeader
-                sectionTitle="Skills"
-                sectionDescription="The skills that I have developed and that I regularly use"
-            />
+
+            { englishLanguage ? 
+                <SectionHeader
+                    sectionTitle="Skills"
+                    sectionDescription="The skills that I have developed and that I regularly use"
+                />
+
+            :
+
+                <SectionHeader
+                    sectionTitle="Compétences"
+                    sectionDescription="Les compétences que j'ai développées et que j'utilise régulièrement"
+                />
+            }
+
             <ul 
                 className='text-center flex flex-wrap gap-y-8 justify-around mt-16'
             >
