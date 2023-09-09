@@ -38,8 +38,8 @@ function Header() {
 
     return (
       <header className="flex justify-between items-center p-8 lg:py-16  xl:w-4/5 lg:mx-auto ">
-        <div className="hidden lg:flex">
-            <span className="">SL -</span>
+        <div className="hidden lg:flex gap-x-1">
+            <span className="">SL - </span>
             <span className="font-bold text-emerald-500"> Web Developer</span>
         </div>
 
