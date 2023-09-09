@@ -65,10 +65,10 @@ function Header() {
         </ul>
         <div className='flex flex-row-reverse justify-between w-full md:w-1/5'>
           <div className='flex gap-x-4'>
-            <button className='flex'>
-            <LanguageToggle />
+            <button aria-label="Set French/English language" className='flex'>
+              <LanguageToggle />
             </button>
-            <button className='flex'>
+            <button aria-label="Set Light/Dark mode" className='flex'>
               <DarkModeToggle />
             </button>
           </div>
