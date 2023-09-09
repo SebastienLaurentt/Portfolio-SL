@@ -51,7 +51,7 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
             </li>
             <li>
               <a href="https://twitter.com/Seb_webdev" aria-label="See my Twitter profile" target="blank_">
-                <AiOutlineTwitter size={28}  className='md:hover:fill-cyan-600' />
+                <AiOutlineTwitter size={28}  className='md:hover:fill-cyan-500' />
               </a>
             </li>
             <li>
