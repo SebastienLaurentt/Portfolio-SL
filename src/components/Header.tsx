@@ -65,12 +65,12 @@ function Header() {
         </ul>
         <div className='flex flex-row-reverse justify-between w-full md:w-1/5'>
           <div className='flex gap-x-4'>
-            <span className='flex'>
+            <button className='flex'>
             <LanguageToggle />
-            </span>
-            <span className='flex'>
+            </button>
+            <button className='flex'>
               <DarkModeToggle />
-            </span>
+            </button>
           </div>
           <div className="md:hidden">
             <IoMdMenu
