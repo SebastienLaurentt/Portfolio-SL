@@ -16,7 +16,7 @@ export default function ToggleButton() {
   console.log(englishLanguage);
 
   return (
-    <button onClick={toggleEnglishLanguage}>
+    <button aria-label="Set French/English language" onClick={toggleEnglishLanguage}>
       {englishLanguage ? 
       <img src={FrFlag} alt="" className="h-6 w-6" /> : 
       <img src={UkFlag} alt="" className="h-6 w-6" />}
