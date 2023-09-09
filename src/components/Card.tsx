@@ -28,9 +28,9 @@ function Card({ mainImage, title, tags, description, website, github }: CardProp
                 <img src={`${mainImage}`} alt="" className=" rounded-xl transition-all duration-400 hover:md:scale-[1.02] h-64" />
             </div>
             <div className="">
-                <h5 className="xl:text-3xl">
+                <h4 className="xl:text-3xl">
                     {title} 
-                </h5>
+                </h4>
                 <div className=" flex gap-x-2 text-cyan-400 mb-4">
                     {tags.map((item, key) => (
                             <span

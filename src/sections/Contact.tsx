@@ -48,7 +48,7 @@ function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
             </div>
             <div>
               <GrMail size={52} className="mx-auto text-emerald-500 mb-2" />
-              <span className=''> Slaurent.26@gmail.com </span>
+              <span className=''>slaurent.26@gmail.com </span>
             </div>
           </div>
         </div>

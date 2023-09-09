@@ -45,17 +45,17 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
           </h2>
           <ul className='mb-4 flex gap-x-4 justify-center lg:justify-start'>
             <li className=''>
-              <a href="https://github.com/SebastienLaurentt" target="blank_">
+              <a href="https://github.com/SebastienLaurentt" aria-label="See my GitHub profile" target="blank_">
                 <AiFillGithub size={28}  className='md:hover:fill-cyan-500'/>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/Seb_webdev" target="blank_">
+              <a href="https://twitter.com/Seb_webdev" aria-label="See my Twitter profile" target="blank_">
                 <AiOutlineTwitter size={28}  className='md:hover:fill-cyan-500' />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/s%C3%A9bastien-laurent-3a007328a/" target="blank_">
+              <a href="www.linkedin.com/in/sébastien-laurent-3a007328a" aria-label="See my Linkedin profile" target="blank_">
                 <AiFillLinkedin size={28} className='md:hover:fill-cyan-500'/>
               </a>
             </li>
