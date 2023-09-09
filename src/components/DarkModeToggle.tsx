@@ -16,7 +16,7 @@ export default function ToggleButton() {
   console.log(darkMode);
 
   return (
-    <button onClick={toggleDarkMode}>
+    <button aria-label="Set Light/Dark mode" onClick={toggleDarkMode}>
       {darkMode ? <BsFillSunFill size={20} color="yellow" /> : <BsFillMoonFill size={20} color="SteelBlue" />}
     </button>
   )
