@@ -17,8 +17,8 @@ function ExperienceButton ( {activeButton, setActiveButton, experienceTitle, exp
         <button 
             className={`${
                 activeButton === experienceTitle
-                ? 'bg-cyan-500 text-white'
-                : 'bg-cyan-800 text-white md:hover:bg-cyan-500'
+                ? 'bg-cyan-600 text-white'
+                : 'bg-cyan-800 text-white md:hover:bg-cyan-600'
             } flex flex-col p-2 rounded-lg items-center`}
             onClick={() => handleButtonClick(experienceTitle)}
         >

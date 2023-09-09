@@ -51,11 +51,11 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
             </li>
             <li>
               <a href="https://twitter.com/Seb_webdev" aria-label="See my Twitter profile" target="blank_">
-                <AiOutlineTwitter size={28}  className='md:hover:fill-cyan-500' />
+                <AiOutlineTwitter size={28}  className='md:hover:fill-cyan-600' />
               </a>
             </li>
             <li>
-              <a href="www.linkedin.com/in/sébastien-laurent-3a007328a" aria-label="See my Linkedin profile" target="blank_">
+              <a href="https://www.linkedin.com/in/s%C3%A9bastien-laurent-3a007328a/" aria-label="See my Linkedin profile" target="blank_">
                 <AiFillLinkedin size={28} className='md:hover:fill-cyan-500'/>
               </a>
             </li>
