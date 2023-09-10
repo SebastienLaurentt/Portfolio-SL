@@ -2,7 +2,7 @@ const data = {
   english:[
     {
       id: 0,
-      mainImage: '/static/img/codit.png',
+      mainImage: '/static/img/codit.webp',
       title: 'Codit',
       tags: [
         {
@@ -21,7 +21,7 @@ const data = {
     },
     {
       id: 1,
-      mainImage: '/static/img/portfolio.png',
+      mainImage: '/static/img/portfolio.webp',
       title: 'Portfolio',
       tags: [
         {
@@ -59,7 +59,7 @@ const data = {
     },
     {
       id: 3,
-      mainImage: '/static/img/codit.png',
+      mainImage: '/static/img/codit.webp',
       title: 'Soon2',
       tags: [
         {
@@ -77,7 +77,7 @@ const data = {
   french:[
     {
       id: 0,
-      mainImage: '/static/img/codit.png',
+      mainImage: '/static/img/codit.webp',
       title: 'Codit',
       tags: [
         {

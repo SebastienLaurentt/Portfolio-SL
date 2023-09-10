@@ -42,7 +42,7 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
                 <div className="lg:w-1/3">
                     <div
                         className={`bg-cover bg-center bg-no-repeat w-32 md:w-40 lg:w-60 h-32 md:h-40 lg:h-60 rounded-full mx-auto `}
-                        style={{ backgroundImage: `url(/static/img/PhotoPerso.png)` }}
+                        style={{ backgroundImage: `url(/static/img/PhotoPerso.webp)` }}
                     /> 
                 </div>
 
