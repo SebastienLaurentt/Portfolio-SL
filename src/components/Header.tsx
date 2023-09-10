@@ -14,17 +14,7 @@ import { useContext } from 'react';
 
 function Header() {
   
-  const [burgerIsOpen, setBurgerIsOpen] = useState(false);
-
-  useEffect(() => {
-    if (burgerIsOpen) {
-      document.body.classList.add('no-scroll');
-    } else {
-      document.body.classList.remove('no-scroll');
-    }
-  }, [burgerIsOpen]);
-
-
+  // ENGLISH MODE
   const context = useContext(EnglishLanguageContext);
 
   if (!context) {
@@ -35,6 +25,16 @@ function Header() {
 
   const dataLanguage = englishLanguage ? data.english : data.french;
 
+  // BURGER STATE
+  const [burgerIsOpen, setBurgerIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (burgerIsOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [burgerIsOpen]);
 
     return (
       <header className="flex justify-between items-center p-8 lg:py-16  xl:w-4/5 lg:mx-auto ">

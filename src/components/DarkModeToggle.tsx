@@ -6,6 +6,7 @@ import { BsFillMoonFill } from 'react-icons/bs';
 import { BsFillSunFill } from 'react-icons/bs';
 
 export default function ToggleButton() {
+  
   const context = useContext(DarkModeContext);
 
   if (!context) {
@@ -13,7 +14,6 @@ export default function ToggleButton() {
   }
 
   const { darkMode, toggleDarkMode } = context;
-  console.log(darkMode);
 
   return (
     <button aria-label="Set Light/Dark mode" onClick={toggleDarkMode}>

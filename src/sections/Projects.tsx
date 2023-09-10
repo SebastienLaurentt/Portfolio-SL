@@ -13,6 +13,7 @@ import { useContext } from 'react';
 
 function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
 
+    // ENGLISH MODE
     const context = useContext(EnglishLanguageContext);
 
     if (!context) {
@@ -44,7 +45,7 @@ function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
                 />
             }
 
-
+            {/* PROJECTS CONTENT (IN CARROUSEL) */}
             <div className='lg:mt-24'>
                 <Carousel>
                     {dataLanguage.map((value) => {

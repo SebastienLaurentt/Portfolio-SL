@@ -10,6 +10,7 @@ import { useContext } from 'react';
 
 function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
 
+    // ENGLISH MODE  
     const context = useContext(EnglishLanguageContext);
 
     if (!context) {
@@ -17,7 +18,6 @@ function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
     }
 
     const { englishLanguage } = context;
-
 
     return (
       <Section id ="contact"  

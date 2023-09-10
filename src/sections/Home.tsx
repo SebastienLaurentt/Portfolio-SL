@@ -17,6 +17,7 @@ import data from '../data/homeData'
 
 function Home ({ gradientToBl }: { gradientToBl: boolean }) {
 
+  // ENGLISH MODE 
   const context = useContext(EnglishLanguageContext);
 
   if (!context) {
@@ -35,7 +36,7 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
     >
       <Header />
       <div className="p-4 md:p-8 lg:px-16 xl:w-4/5 lg:mx-auto lg:flex lg:items-center ">
-        {/* Hero  */}
+        {/* HERO  */}
         <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8  mb-12 md:mb-20">
           <span className="text-4xl md:text-5xl mb-0"> 
            {dataLanguage.opening}
@@ -43,6 +44,7 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
           <h2 className="mb-2 lg:text-left"> 
             {dataLanguage.presentation}
           </h2>
+          {/* SOCIAL ICON */}
           <ul className='mb-4 flex gap-x-4 justify-center lg:justify-start'>
             <li className=''>
               <a href="https://github.com/SebastienLaurentt" aria-label="See my GitHub profile" target="blank_">
@@ -64,20 +66,21 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
             className="text-lg md:text-xl mb-8" 
             dangerouslySetInnerHTML={{ __html: dataLanguage.description }} 
           />
+          {/* CV DOWNLOAD */}
           <a
-            className="text-white bg-cyan-800 md:hover:bg-cyan-500 text-md md:text-lg p-4 rounded-full"
+            className=" bg-cyan-800 md:hover:bg-cyan-500 text-md md:text-lg p-4 rounded-full"
             href={CvFile}
             download ="SébastienLaurent_CV.pdf"
           >
             {dataLanguage.cv}
           </a>
         </div>
-        {/* Home logo */}
+        {/* HOME LOGO */}
         <div className='lg:w-2/3 lg:flex lg:justify-end'>
           <img src={deskLogo} alt="" className="h-60 mx-auto lg:mx-0 md:h-96 lg:h-[32rem]" />
         </div>
       </div>
-      {/* Scroll bottom */}
+      {/* SCROLL BOTTOM */}
       <div className="text-center  md:mt-12 animate-bounce">
         <span className=""> Scroll </span>
         <div className="flex flex-row justify-center">

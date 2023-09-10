@@ -15,10 +15,8 @@ import { useContext } from 'react';
 
 
 function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
-  const [activeButton, setActiveButton] = useState('PhD Student');
 
-  let sectionContent;
-
+  // ENGLISH MODE
   const context = useContext(EnglishLanguageContext);
 
   if (!context) {
@@ -30,6 +28,12 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
   const dataButtonLanguage = englishLanguage ? dataButton.english : dataButton.french;
 
   const dataContentLanguage = englishLanguage ? dataContent.english : dataContent.french;
+
+ // EXPERIENCE BUTTON STATE
+  const [activeButton, setActiveButton] = useState('PhD Student');
+
+  
+  let sectionContent;
 
   if (activeButton === 'PhD Student' || activeButton === 'Doctorat') {
     sectionContent = (
@@ -88,7 +92,7 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
         />
       }
       
-
+      {/* EXPERIENCE BUTTON */}
       <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 md:px-4">
         {dataButtonLanguage.map((value) => {
           return (
@@ -103,6 +107,7 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
           );
         })}
       </div>
+      {/* EXPERIENCE CONTENT */}
       <section className="">
         {sectionContent}
       </section>

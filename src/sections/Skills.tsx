@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { EnglishLanguageContext } from "../contexts/LanguageProvider";
 import { useContext } from 'react';
 
+// ANIMATION TO SKILL LISTS
 const fadeInAnimationsVariants = {
     initial: {
         opacity:0,
@@ -24,6 +25,7 @@ const fadeInAnimationsVariants = {
 
 function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
 
+    // ENGLISH MODE
     const context = useContext(EnglishLanguageContext);
 
     if (!context) {
@@ -53,6 +55,7 @@ function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
                 />
             }
 
+            {/* SKILLS LIST */}
             <ul 
                 className='text-center flex flex-wrap gap-y-8 justify-around mt-16'
             >
