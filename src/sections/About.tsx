@@ -9,6 +9,7 @@ import { useContext } from 'react';
 
 function About ({ gradientToBl }: { gradientToBl: boolean }) {
 
+    // ENGLISH MODE
     const context = useContext(EnglishLanguageContext);
 
     if (!context) {
@@ -16,7 +17,6 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
     }
 
     const { englishLanguage } = context;
-
 
     return (
         <Section id ="about"  
@@ -37,8 +37,9 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
                     sectionDescription="Une brève introduction me concernant"
                 />
             }
-
+            {/* ABOUT CONTENT */}
             <div className="mt-12 lg:mt-16 lg:mx-auto lg:flex lg:flex-row-reverse lg:items-center lg:w-4/5 ">
+                {/* ABOUT PICTURE */}
                 <div className="lg:w-1/3">
                     <div
                         className={`bg-cover bg-center bg-no-repeat w-32 md:w-40 lg:w-60 h-32 md:h-40 lg:h-60 rounded-full mx-auto `}
@@ -46,9 +47,10 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
                     /> 
                 </div>
 
+                {/* ABOUT DESCRIPTION */}
                 { 
                     englishLanguage ? 
-
+                        
                         <div className="p-4 md:p-8 text-center mt-8 lg:w-2/3">
                             <p className="">
                                 Holder of a <strong className='text-emerald-500'>Ph.D. in Cognitive Sciences</strong>, my passion for innovation has led me to shape a unique professional trajectory. My journey began with an <strong className='text-emerald-500'>innovative thesis</strong>, followed by a position as a research associate in the field of <strong className='text-emerald-500'>cognitive sciences</strong>, which provided me with a solid understanding of the <strong className='text-emerald-500'>human brain</strong>.
