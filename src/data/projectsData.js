@@ -40,7 +40,7 @@ const data = {
     },
     {
       id: 2,
-      mainImage: '/static/img/codit.png',
+      mainImage: '/static/img/codit.webp',
       title: 'Soon',
       tags: [
         {
@@ -96,7 +96,7 @@ const data = {
     },
     {
       id: 1,
-      mainImage: '/static/img/portfolio.png',
+      mainImage: '/static/img/portfolio.webp',
       title: 'Portfolio',
       tags: [
         {
@@ -115,7 +115,7 @@ const data = {
     },
     {
       id: 2,
-      mainImage: '/static/img/codit.png',
+      mainImage: '/static/img/codit.webp',
       title: 'Bientôt',
       tags: [
         {
@@ -134,7 +134,7 @@ const data = {
     },
     {
       id: 3,
-      mainImage: '/static/img/codit.png',
+      mainImage: '/static/img/codit.webp',
       title: 'Bientôt 2',
       tags: [
         {
