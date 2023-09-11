@@ -55,7 +55,7 @@ function Header() {
                         <Link
                             to={value.to}
                             smooth={true} 
-                            className="cursor-pointer md:hover:text-cyan-500"
+                            className="cursor-pointer md:hover:text-sky-500"
                             >
                             {value.content}
                         </Link>
