@@ -74,3 +74,7 @@
   background-color: #FFFAFA;
   color: black;
 }
+
+.cardTitle {
+  @apply  text-xl md:text-2xl xl:text-3xl text-emerald-500 ;
+}
