@@ -25,7 +25,7 @@ function Card({ mainImage, title, tags, description, website, github }: CardProp
     return (
         <div className="flex flex-col bg-gray-700  rounded-lg p-4 ">
             <div className=" mb-4 flex justify-center">
-                <img src={`${mainImage}`} alt="" className=" rounded-xl transition-all duration-400 hover:md:scale-[1.02] h-64 w-full " />
+                <img src={`${mainImage}`} alt="" className=" rounded-xl transition-all duration-400 hover:md:scale-[1.02] h-auto w-full " />
             </div>
             <div className="">
                 <span className="cardTitle">
