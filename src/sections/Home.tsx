@@ -68,7 +68,7 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
           />
           {/* CV DOWNLOAD */}
           <a
-            className=" bg-cyan-800 md:hover:bg-cyan-500 text-md md:text-lg p-4 rounded-full"
+            className="text-white bg-sky-900 md:hover:bg-sky-600 text-md md:text-lg p-4 rounded-full"
             href={CvFile}
             download ="SébastienLaurent_CV.pdf"
           >
