@@ -77,7 +77,7 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
         </div>
         {/* HOME LOGO */}
         <div className='lg:w-2/3 lg:flex lg:justify-end'>
-          <img src={deskLogo} alt="" className="h-60 mx-auto lg:mx-0 md:h-96 lg:h-[32rem]" />
+          <img src={deskLogo} alt="" className="h-60 w-full lg:mx-0 md:h-96 lg:h-[32rem]" />
         </div>
       </div>
       {/* SCROLL BOTTOM */}
