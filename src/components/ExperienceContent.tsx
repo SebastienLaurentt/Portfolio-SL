@@ -19,7 +19,7 @@ function ExperienceContent ( {title, location, description, moreDescription, src
             </div>
             <div className= "lg:w-2/3 lg:flex lg:justify-end">
                 <img 
-                    className="mt-12 md:mt-16 lg:mt-0 h-40 md:h-80 mx-auto lg:mx-0 "
+                    className="mt-12 md:mt-16 lg:mt-0 h-40 md:h-80 w-full"
                     src={`${srcImg}`}
                     alt={altImg} 
                 />
