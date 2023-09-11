@@ -4,20 +4,23 @@
 
 @layer base {
   html {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     color:white;
   }
 
   h1 {
-    @apply text-2xl font-semibold mb-6;
+    @apply text-4xl md:text-5xl;
+    font-family: 'Playfair Display', serif;
   }
 
   h2 {
     @apply bg-gradient-to-r from-rose-800 to-pink-500 bg-clip-text text-transparent text-center text-4xl md:text-5xl;
+    font-family: 'Playfair Display', serif;
   }
 
   h3 {
     @apply text-emerald-500 text-3xl md:text-4xl mb-4;
+    font-family: 'Playfair Display', serif;
   }
 
   h4 {
@@ -26,6 +29,7 @@
 
   h5 {
     @apply  text-xl md:text-2xl  text-emerald-500;
+    
   }
 
   p {

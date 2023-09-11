@@ -38,9 +38,9 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
       <div className="p-4 md:p-8 lg:px-16 xl:w-4/5 lg:mx-auto lg:flex lg:items-center ">
         {/* HERO  */}
         <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8  mb-12 md:mb-20">
-          <span className="text-4xl md:text-5xl mb-0"> 
+          <h1 className=""> 
            {dataLanguage.opening}
-          </span>
+          </h1>
           <h2 className="mb-2 lg:text-left"> 
             {dataLanguage.presentation}
           </h2>
