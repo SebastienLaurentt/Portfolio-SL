@@ -21,6 +21,25 @@ const data = {
     },
     {
       id: 1,
+      mainImage: '/static/img/galopins.webp',
+      title: 'Les Galopins',
+      tags: [
+        {
+          "name" :"React",
+        },
+        {
+          "name" :"Tailwind",
+        },
+        {
+          "name" :"JS",
+        },
+      ],
+      description: 'Hiking club website (WIP)',
+      website: 'https://galopins.vercel.app/',
+      github:'https://github.com/SebastienLaurentt/Galopins',
+    },
+    {
+      id: 2,
       mainImage: '/static/img/portfolio.webp',
       title: 'Portfolio',
       tags: [
@@ -38,29 +57,11 @@ const data = {
       website: 'https://codit-three.vercel.app/',
       github:'https://github.com/SebastienLaurentt/Portfolio-SL',
     },
-    {
-      id: 2,
-      mainImage: '/static/img/codit.webp',
-      title: 'Soon',
-      tags: [
-        {
-          "name" :"React",
-        },
-        {
-          "name" :"Tailwind",
-        },
-        {
-          "name" :"JS",
-        },
-      ],
-      description: 'Lorem ipsum dolor sit amet.',
-      website: '',
-      github:'',
-    },
+
     {
       id: 3,
       mainImage: '/static/img/codit.webp',
-      title: 'Soon2',
+      title: 'Soon',
       tags: [
         {
           "name" :"PHP",
@@ -96,6 +97,25 @@ const data = {
     },
     {
       id: 1,
+      mainImage: '/static/img/galopins.webp',
+      title: 'Les Galopins',
+      tags: [
+        {
+          "name" :"React",
+        },
+        {
+          "name" :"Tailwind",
+        },
+        {
+          "name" :"JS",
+        },
+      ],
+      description: 'Site pour club de randonnée (en cours)',
+      website: 'https://galopins.vercel.app/',
+      github:'https://github.com/SebastienLaurentt/Galopins',
+    },
+    {
+      id: 2,
       mainImage: '/static/img/portfolio.webp',
       title: 'Portfolio',
       tags: [
@@ -113,25 +133,7 @@ const data = {
       website: 'https://codit-three.vercel.app/',
       github:'https://github.com/SebastienLaurentt/Portfolio-SL',
     },
-    {
-      id: 2,
-      mainImage: '/static/img/codit.webp',
-      title: 'Bientôt',
-      tags: [
-        {
-          "name" :"React",
-        },
-        {
-          "name" :"Tailwind",
-        },
-        {
-          "name" :"JS",
-        },
-      ],
-      description: 'Lorem ipsum dolor sit amet.',
-      website: '',
-      github:'',
-    },
+
     {
       id: 3,
       mainImage: '/static/img/codit.webp',
