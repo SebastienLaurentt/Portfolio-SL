@@ -20,7 +20,7 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
   // ENGLISH MODE 
   const context = useContext(EnglishLanguageContext);
 
-  if (!context) {
+  if (!context) { 
     throw new Error("EnglishLanguageContext is not available.");
   }
 
