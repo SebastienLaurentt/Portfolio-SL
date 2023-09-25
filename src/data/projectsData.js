@@ -9,6 +9,9 @@ const data = {
           "name" :"React",
         },
         {
+          "name" :"Redux",
+        },
+        {
           "name" :"Tailwind",
         },
         {
@@ -54,7 +57,7 @@ const data = {
         },
       ],
       description: 'The first version of my portfolio',
-      website: 'https://codit-three.vercel.app/',
+      website: 'https://slaurent.vercel.app/',
       github:'https://github.com/SebastienLaurentt/Portfolio-SL',
     },
 
@@ -83,6 +86,9 @@ const data = {
       tags: [
         {
           "name" :"React",
+        },
+        {
+          "name" :"Redux",
         },
         {
           "name" :"Tailwind",
@@ -130,7 +136,7 @@ const data = {
         },
       ],
       description: 'La première version de mon portfolio',
-      website: 'https://codit-three.vercel.app/',
+      website: 'https://slaurent.vercel.app/',
       github:'https://github.com/SebastienLaurentt/Portfolio-SL',
     },
 

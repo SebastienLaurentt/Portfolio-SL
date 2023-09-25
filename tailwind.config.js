@@ -13,7 +13,6 @@ module.exports = {
       '4xl': '2.5rem',
       '5xl': '3.5rem',
     },
-
     extend: {},
   },
   plugins: [],
