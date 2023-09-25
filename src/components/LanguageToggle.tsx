@@ -18,8 +18,8 @@ export default function ToggleButton() {
   return (
     <button aria-label="Set French/English language" onClick={toggleEnglishLanguage}>
       {englishLanguage ? 
-      <img src={FrFlag} alt="" className="h-6 w-6" /> : 
-      <img src={UkFlag} alt="" className="h-6 w-6" />}
+      <img src={FrFlag} alt="" className="h-6 w-6 2xl:h-12 2xl:w-12" /> : 
+      <img src={UkFlag} alt="" className="h-6 w-6 2xl:h-12 2xl:w-12" />}
     </button>
   )
 }

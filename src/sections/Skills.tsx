@@ -39,7 +39,7 @@ function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
             gradientToBl={gradientToBl}
             paddingBottom={true}
         >
-            <ImPower size={52} className="mx-auto text-rose-700" />
+            <ImPower className="mx-auto text-rose-700 2xl:w-24 2xl:h-24" />
 
             { englishLanguage ? 
                 <SectionHeader
@@ -57,7 +57,7 @@ function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
 
             {/* SKILLS LIST */}
             <ul 
-                className='text-center flex flex-wrap gap-y-8 justify-around mt-16'
+                className='text-center flex flex-wrap gap-y-8 justify-around mt-16 2xl:w-2/3 mx-auto'
             >
                 {data.map((value, id) => {
                     return (

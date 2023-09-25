@@ -77,7 +77,7 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
       gradientToBl={gradientToBl}
       paddingBottom={true}
     >
-      <MdSchool size={52} className="mx-auto text-rose-700" />
+      <MdSchool className="mx-auto text-rose-700 2xl:w-24 2xl:h-24" />
       { englishLanguage ? 
         <SectionHeader
           sectionTitle="Experiences"
@@ -92,25 +92,28 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
         />
       }
       
+      <div className='2xl:w-2/3 mx-auto'>
       {/* EXPERIENCE BUTTON */}
-      <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 md:px-4">
-        {dataButtonLanguage.map((value) => {
-          return (
-            <ExperienceButton
-              activeButton={activeButton}
-              setActiveButton={setActiveButton}
-              key={value.id}
-              experienceTitle={value.experienceTitle}
-              experienceDate= {value.experienceDate}
-            
-            />
-          );
-        })}
+        <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 md:px-4">
+          {dataButtonLanguage.map((value) => {
+            return (
+              <ExperienceButton
+                activeButton={activeButton}
+                setActiveButton={setActiveButton}
+                key={value.id}
+                experienceTitle={value.experienceTitle}
+                experienceDate= {value.experienceDate}
+              
+              />
+            );
+          })}
+        </div>
+        {/* EXPERIENCE CONTENT */}
+        <section className="">
+          {sectionContent}
+        </section>
       </div>
-      {/* EXPERIENCE CONTENT */}
-      <section className="">
-        {sectionContent}
-      </section>
+
     </Section>
   );
 }

@@ -29,7 +29,7 @@ function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
             gradientToBl={gradientToBl}
             paddingBottom={true}
         >
-            <MdBuild size={52} className="mx-auto text-rose-700" />
+            <MdBuild className="mx-auto text-rose-700 2xl:w-24 2xl:h-24" />
 
             { englishLanguage ? 
                 <SectionHeader

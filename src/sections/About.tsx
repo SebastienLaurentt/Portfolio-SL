@@ -23,7 +23,7 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
             gradientToBl={gradientToBl}
             paddingBottom={true}
         >
-            <BsPersonCircle size={52} className="mx-auto text-rose-700" />
+            <BsPersonCircle  className="mx-auto text-rose-700 w-12 h-12 2xl:w-24 2xl:h-24" />
             { englishLanguage ? 
                 <SectionHeader
                     sectionTitle="About me"
@@ -38,11 +38,11 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
                 />
             }
             {/* ABOUT CONTENT */}
-            <div className="mt-12 lg:mt-16 lg:mx-auto lg:flex lg:flex-row-reverse lg:items-center lg:w-4/5 ">
+            <div className="mt-12 lg:mt-16 lg:mx-auto lg:flex lg:flex-row-reverse lg:items-center lg:w-4/5 2xl:w-2/3 ">
                 {/* ABOUT PICTURE */}
                 <div className="lg:w-1/3">
                     <div
-                        className={`bg-cover bg-center bg-no-repeat w-32 md:w-40 lg:w-60 h-32 md:h-40 lg:h-60 rounded-full mx-auto `}
+                        className={`bg-cover bg-center bg-no-repeat w-32 md:w-40 lg:w-60 2xl:w-80 h-32 md:h-40 lg:h-60 2xl:h-80 rounded-full mx-auto `}
                         style={{ backgroundImage: `url(/static/img/PhotoPerso.webp)` }}
                     /> 
                 </div>
