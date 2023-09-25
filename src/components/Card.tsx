@@ -45,15 +45,15 @@ function Card({ mainImage, title, tags, description, website, github }: CardProp
                 { englishLanguage ? 
 
                     <div className="text-gray-300 flex gap-x-4 italic">
-                        <a href={`${website}`}> View Website  </a>
-                        <a href={`${github}`}> View GitHub  </a>
+                        <a href={`${website}`} target="_blank"> View Website  </a>
+                        <a href={`${github}`} target="_blank"> View GitHub  </a>
                     </div>
                 
                 :
 
                     <div className="text-gray-300 flex gap-x-4 italic">
-                        <a href={`${website}`}> Voir Site </a>
-                        <a href={`${github}`}> Voir GitHub  </a>
+                        <a href={`${website}`} target="_blank"> Voir Site </a>
+                        <a href={`${github}`} target="_blank"> Voir GitHub  </a>
                     </div>
 
 
