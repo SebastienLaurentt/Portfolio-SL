@@ -25,20 +25,22 @@ function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
         paddingBottom={false}
       >
         <div>
-          <SiMinutemailer className="mx-auto text-rose-700 w-12 h-12 md:w-16 md:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24" />
-
           { englishLanguage ? 
               <SectionHeader
                 sectionTitle="Contact"
                 sectionDescription="Do you have any questions or requests? Please feel free to contact me !"
-              />
+              >
+                <SiMinutemailer className="iconSectionHeader" />
+              </SectionHeader>
 
             :
 
               <SectionHeader
                 sectionTitle="Contact"
                 sectionDescription="Vous avez des questions ou  requêtes ? Contactez moi !"
-              />
+              >
+                <SiMinutemailer className="iconSectionHeader" />
+              </SectionHeader>
           }
 
           <div className='flex flex-wrap gap-y-4 justify-center gap-x-6 mb-8'>
