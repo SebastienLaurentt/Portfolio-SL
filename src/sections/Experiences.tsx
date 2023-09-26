@@ -77,41 +77,42 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
       gradientToBl={gradientToBl}
       paddingBottom={true}
     >
-      <MdSchool className="mx-auto text-rose-700 w-12 h-12 md:w-16 md:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24" />
       { englishLanguage ? 
         <SectionHeader
           sectionTitle="Experiences"
           sectionDescription="Let's see how I went from cognitive research to web development !"
-        />
+        >
+          <MdSchool className="iconSectionHeader" />
+        </SectionHeader>
 
         :
 
         <SectionHeader
           sectionTitle="Expériences"
           sectionDescription="Regardons comment je suis passé de la recherche au développement web !"
-        />
+        >
+          <MdSchool className="iconSectionHeader" />
+        </SectionHeader>
       }
       
-      <div className='2xl:w-2/3 mx-auto'>
       {/* EXPERIENCE BUTTON */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-x-6 md:px-4">
-          {dataButtonLanguage.map((value) => {
-            return (
-              <ExperienceButton
-                activeButton={activeButton}
-                setActiveButton={setActiveButton}
-                key={value.id}
-                experienceTitle={value.experienceTitle}
-                experienceDate= {value.experienceDate}
-              
-              />
-            );
-          })}
-        </div>
-        {/* EXPERIENCE CONTENT */}
-        <section className="">
-          {sectionContent}
-        </section>
+      <div className="flex flex-wrap justify-center gap-2 md:gap-x-6 md:px-4">
+        {dataButtonLanguage.map((value) => {
+          return (
+            <ExperienceButton
+              activeButton={activeButton}
+              setActiveButton={setActiveButton}
+              key={value.id}
+              experienceTitle={value.experienceTitle}
+              experienceDate= {value.experienceDate}
+            
+            />
+          );
+        })}
+      </div>
+      {/* EXPERIENCE CONTENT */}
+      <div className="2xl:w-2/3 mx-auto">
+        {sectionContent}
       </div>
 
     </Section>

@@ -23,19 +23,22 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
             gradientToBl={gradientToBl}
             paddingBottom={true}
         >
-            <BsPersonCircle  className="mx-auto text-rose-700 w-12 h-12 md:w-16 md:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24" />
             { englishLanguage ? 
                 <SectionHeader
                     sectionTitle="About me"
                     sectionDescription="A small introduction about me"
-                />
+                >
+                    <BsPersonCircle  className="iconSectionHeader" />
+                </SectionHeader>
 
                 :
 
                 <SectionHeader
                     sectionTitle="Qui suis je ?"
                     sectionDescription="Une brève introduction me concernant"
-                />
+                >
+                    <BsPersonCircle  className="iconSectionHeader" />
+                </SectionHeader>
             }
             {/* ABOUT CONTENT */}
             <div className="mt-12 lg:mt-16 lg:mx-auto lg:flex lg:flex-row-reverse lg:items-center lg:w-4/5 2xl:w-2/3 ">

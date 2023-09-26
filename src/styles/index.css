@@ -76,5 +76,9 @@
 }
 
 .cardTitle {
-  @apply  text-xl md:text-2xl xl:text-3xl text-emerald-500 ;
+  @apply  text-xl md:text-2xl xl:text-3xl text-emerald-500;
+}
+
+.iconSectionHeader {
+  @apply mx-auto text-rose-700 w-12 h-12 md:w-16 md:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24;
 }
