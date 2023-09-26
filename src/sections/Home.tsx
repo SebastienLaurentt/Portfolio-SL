@@ -35,9 +35,11 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
       paddingBottom={true}
     >
       <Header />
-      <div className="p-4 md:p-8 lg:px-16 xl:w-4/5 lg:mx-auto lg:flex lg:items-center 2xl:w-2/3 2xl:mt-12">
+
+      {/* HOME CONTENT */}
+      <div className="p-4 md:p-8 xl:px-16 xl:w-4/5 lg:mx-auto lg:flex lg:items-center 2xl:w-2/3 2xl:mt-12">
         {/* HERO  */}
-        <div className=" w-full lg:w-1/2 text-center lg:text-left md:mt-8  mb-12 md:mb-20">
+        <div className=" w-full xl:w-1/2 text-center xl:text-left mb-12 md:mb-20">
           <h1 className=""> 
            {dataLanguage.opening}
           </h1>
@@ -53,12 +55,12 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
             </li>
             <li>
               <a href="https://twitter.com/Seb_webdev" aria-label="See my Twitter profile" target="blank_">
-                <AiOutlineTwitter size={28}  className='md:hover:fill-sky-700 h-8 w-8 md:h-10 md:w-10 2xl:h-12 2xl:w-12' />
+                <AiOutlineTwitter  className='md:hover:fill-sky-700 h-8 w-8 md:h-10 md:w-10 2xl:h-12 2xl:w-12' />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/s%C3%A9bastien-laurent-3a007328a/" aria-label="See my Linkedin profile" target="blank_">
-                <AiFillLinkedin size={28} className='md:hover:fill-sky-700 h-8 w-8 md:h-10 md:w-10 2xl:h-12 2xl:w-12'/>
+                <AiFillLinkedin className='md:hover:fill-sky-700 h-8 w-8 md:h-10 md:w-10 2xl:h-12 2xl:w-12'/>
               </a>
             </li>
           </ul>
@@ -75,6 +77,7 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
             {dataLanguage.cv}
           </a>
         </div>
+
         {/* HOME LOGO */}
         <div className='lg:w-2/3 lg:flex lg:justify-end'>
           <img src={deskLogo} alt="" className="h-60 w-full lg:mx-0 md:h-96 lg:h-[32rem] 2xl:h-[40rem]" />
