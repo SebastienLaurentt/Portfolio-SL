@@ -25,7 +25,7 @@ function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
         paddingBottom={false}
       >
         <div>
-          <SiMinutemailer size={52} className="mx-auto text-rose-700" />
+          <SiMinutemailer className="mx-auto text-rose-700 w-12 h-12 md:w-16 md:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24" />
 
           { englishLanguage ? 
               <SectionHeader

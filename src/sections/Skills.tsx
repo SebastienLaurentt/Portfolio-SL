@@ -39,7 +39,7 @@ function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
             gradientToBl={gradientToBl}
             paddingBottom={true}
         >
-            <ImPower className="mx-auto text-rose-700 2xl:w-24 2xl:h-24" />
+            <ImPower className="mx-auto text-rose-700 w-12 h-12 md:w-16 md:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24" />
 
             { englishLanguage ? 
                 <SectionHeader

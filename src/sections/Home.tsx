@@ -48,17 +48,17 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
           <ul className='mb-4 flex gap-x-4 justify-center lg:justify-start'>
             <li className=''>
               <a href="https://github.com/SebastienLaurentt" aria-label="See my GitHub profile" target="blank_">
-                <AiFillGithub   className='md:hover:fill-sky-700 h-6 w-6 2xl:h-12 2xl:w-12'/>
+                <AiFillGithub   className='md:hover:fill-sky-700 h-8 w-8 md:h-10 md:w-10 2xl:h-12 2xl:w-12'/>
               </a>
             </li>
             <li>
               <a href="https://twitter.com/Seb_webdev" aria-label="See my Twitter profile" target="blank_">
-                <AiOutlineTwitter size={28}  className='md:hover:fill-sky-700 h-6 w-6 2xl:h-12 2xl:w-12' />
+                <AiOutlineTwitter size={28}  className='md:hover:fill-sky-700 h-8 w-8 md:h-10 md:w-10 2xl:h-12 2xl:w-12' />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/s%C3%A9bastien-laurent-3a007328a/" aria-label="See my Linkedin profile" target="blank_">
-                <AiFillLinkedin size={28} className='md:hover:fill-sky-700 h-6 w-6 2xl:h-12 2xl:w-12'/>
+                <AiFillLinkedin size={28} className='md:hover:fill-sky-700 h-8 w-8 md:h-10 md:w-10 2xl:h-12 2xl:w-12'/>
               </a>
             </li>
           </ul>
