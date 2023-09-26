@@ -41,7 +41,7 @@ function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
               />
           }
 
-          <div className='flex justify-center gap-x-6 mb-8'>
+          <div className='flex flex-wrap gap-y-4 justify-center gap-x-6 mb-8'>
             <div>
               <ImLocation2 size={52} className="mx-auto text-emerald-500 mb-2" />
               <span className=''>Lyon, France </span>
