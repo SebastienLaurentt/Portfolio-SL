@@ -95,26 +95,24 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
         </SectionHeader>
       }
       
-      <div className='2xl:w-2/3 mx-auto'>
       {/* EXPERIENCE BUTTON */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-x-6 md:px-4">
-          {dataButtonLanguage.map((value) => {
-            return (
-              <ExperienceButton
-                activeButton={activeButton}
-                setActiveButton={setActiveButton}
-                key={value.id}
-                experienceTitle={value.experienceTitle}
-                experienceDate= {value.experienceDate}
-              
-              />
-            );
-          })}
-        </div>
-        {/* EXPERIENCE CONTENT */}
-        <section className="">
-          {sectionContent}
-        </section>
+      <div className="flex flex-wrap justify-center gap-2 md:gap-x-6 md:px-4">
+        {dataButtonLanguage.map((value) => {
+          return (
+            <ExperienceButton
+              activeButton={activeButton}
+              setActiveButton={setActiveButton}
+              key={value.id}
+              experienceTitle={value.experienceTitle}
+              experienceDate= {value.experienceDate}
+            
+            />
+          );
+        })}
+      </div>
+      {/* EXPERIENCE CONTENT */}
+      <div className="2xl:w-2/3 mx-auto">
+        {sectionContent}
       </div>
 
     </Section>

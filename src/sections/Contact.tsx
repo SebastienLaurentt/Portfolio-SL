@@ -24,38 +24,35 @@ function Contact ({ gradientToBl }: { gradientToBl: boolean }) {
         gradientToBl={gradientToBl}
         paddingBottom={false}
       >
-        <div>
-          { englishLanguage ? 
-              <SectionHeader
-                sectionTitle="Contact"
-                sectionDescription="Do you have any questions or requests? Please feel free to contact me !"
-              >
-                <SiMinutemailer className="iconSectionHeader" />
-              </SectionHeader>
+        { englishLanguage ? 
+            <SectionHeader
+              sectionTitle="Contact"
+              sectionDescription="Do you have any questions or requests? Please feel free to contact me !"
+            >
+              <SiMinutemailer className="iconSectionHeader" />
+            </SectionHeader>
 
-            :
+          :
 
-              <SectionHeader
-                sectionTitle="Contact"
-                sectionDescription="Vous avez des questions ou  requêtes ? Contactez moi !"
-              >
-                <SiMinutemailer className="iconSectionHeader" />
-              </SectionHeader>
-          }
-
-          <div className='flex flex-wrap gap-y-4 justify-center gap-x-6 mb-8'>
-            <div>
-              <ImLocation2 size={52} className="mx-auto text-emerald-500 mb-2" />
-              <span className=''>Lyon, France </span>
-            </div>
-            <div>
-              <GrMail size={52} className="mx-auto text-emerald-500 mb-2" />
-              <span className=''>slaurent.26@gmail.com </span>
-            </div>
+            <SectionHeader
+              sectionTitle="Contact"
+              sectionDescription="Vous avez des questions ou  requêtes ? Contactez moi !"
+            >
+              <SiMinutemailer className="iconSectionHeader" />
+            </SectionHeader>
+        }
+        {/* CONTACT CONTENT */}
+        <div className='flex flex-wrap gap-y-4 justify-center gap-x-6 mb-8'>
+          <div>
+            <ImLocation2 size={52} className="mx-auto text-emerald-500 mb-2" />
+            <span className=''>Lyon, France </span>
+          </div>
+          <div>
+            <GrMail size={52} className="mx-auto text-emerald-500 mb-2" />
+            <span className=''>slaurent.26@gmail.com </span>
           </div>
         </div>
         
-
         {/* <div className="md:px-4">
           <form action="submit" >
               <div className="flex flex-col gap-y-2 md:gap-y-4 mb-4 md:text-lg text-white  ">
