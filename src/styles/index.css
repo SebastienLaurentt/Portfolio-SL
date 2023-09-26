@@ -9,22 +9,22 @@
   }
 
   h1 {
-    @apply text-4xl md:text-5xl;
+    @apply text-4xl md:text-5xl 2xl:text-6xl;
     font-family: 'Playfair Display', serif;
   }
 
   h2 {
-    @apply bg-gradient-to-r from-rose-800 to-pink-500 bg-clip-text text-transparent text-center text-4xl md:text-5xl;
+    @apply bg-gradient-to-r from-rose-800 to-pink-500 bg-clip-text text-transparent text-center text-4xl md:text-5xl 2xl:text-6xl;
     font-family: 'Playfair Display', serif;
   }
 
   h3 {
-    @apply text-emerald-500 text-3xl md:text-4xl mb-4;
+    @apply text-emerald-500 text-3xl md:text-4xl 2xl:text-5xl mb-4;
     font-family: 'Playfair Display', serif;
   }
 
   h4 {
-    @apply  italic mb-4  text-md md:text-lg;
+    @apply  italic mb-4  text-md md:text-lg 2xl:text-xl;
   }
 
   h5 {
@@ -33,11 +33,11 @@
   }
 
   p {
-    @apply text-base md:text-xl  mb-4;
+    @apply text-base md:text-xl 2xl:text-2xl  mb-4;
   }
 
   span {
-    @apply text-base md:text-lg;
+    @apply text-base md:text-lg 2xl:text-xl;
   }
 
   strong {
@@ -63,7 +63,7 @@
 
 /* Custom classes */
 .sectionDescription {
-  @apply text-lg md:text-xl  mb-4 text-center mb-8;
+  @apply text-lg md:text-xl 2xl:text-2xl  mb-4 text-center mb-8;
 }
 
 .no-scroll {

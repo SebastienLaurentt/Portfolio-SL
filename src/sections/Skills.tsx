@@ -39,7 +39,7 @@ function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
             gradientToBl={gradientToBl}
             paddingBottom={true}
         >
-            <ImPower size={52} className="mx-auto text-rose-700" />
+            <ImPower className="mx-auto text-rose-700 w-12 h-12 md:w-16 md:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24" />
 
             { englishLanguage ? 
                 <SectionHeader
@@ -57,7 +57,7 @@ function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
 
             {/* SKILLS LIST */}
             <ul 
-                className='text-center flex flex-wrap gap-y-8 justify-around mt-16'
+                className='text-center flex flex-wrap gap-8 justify-around mt-16 2xl:w-2/3 mx-auto'
             >
                 {data.map((value, id) => {
                     return (
@@ -72,10 +72,10 @@ function Skills ({ gradientToBl }: { gradientToBl: boolean }) {
                             }}   
                             custom={id}
                         >
-                            <svg viewBox="0 0 128 128" className='w-32 h-32 mb-2'>
+                            <svg viewBox="0 0 128 128" className='w-16 h-16 md:w-24 md:h-24 xl:w-32 xl:h-32 2xl:w-48 2xl:h-48 mb-2'>
                                 <g dangerouslySetInnerHTML={{ __html: value.data }} />
                             </svg>
-                            <span className='languageName'>{value.name}</span>
+                            <span>{value.name}</span>
                         </motion.li>
                     );
                 })}

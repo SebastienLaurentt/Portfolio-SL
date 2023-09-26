@@ -37,7 +37,7 @@ function Header() {
   }, [burgerIsOpen]);
 
     return (
-      <header className="flex justify-between items-center p-8 lg:py-16  xl:w-4/5 lg:mx-auto ">
+      <header className="flex justify-between items-center p-8 lg:py-16  xl:w-4/5 lg:mx-auto 2xl:w-2/3 ">
         <div className="hidden lg:flex gap-x-1">
             <span className="">SL - </span>
             <span className="font-bold text-emerald-500"> Web Developer</span>
@@ -48,14 +48,14 @@ function Header() {
         burgerIsOpen={burgerIsOpen}
         gradientToBl={true}
       />
-        <ul className="hidden md:flex  gap-6 lg:gap-12 ">
+        <ul className="hidden md:flex  gap-6 lg:gap-12  ">
             {dataLanguage.map((value) => {
                 return (
-                    <li>
+                    <li className=''>
                         <Link
                             to={value.to}
                             smooth={true} 
-                            className="cursor-pointer md:hover:text-sky-500"
+                            className="cursor-pointer md:hover:text-sky-500 2xl:text-xl"
                             >
                             {value.content}
                         </Link>
@@ -64,7 +64,7 @@ function Header() {
             })}
         </ul>
         <div className='flex flex-row-reverse justify-between w-full md:w-1/5'>
-          <div className='flex gap-x-4'>
+          <div className='flex gap-x-4 2xl:gap-x-6 '>
             <span  className='flex'>
               <LanguageToggle />
             </span>
