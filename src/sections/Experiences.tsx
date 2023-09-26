@@ -94,7 +94,7 @@ function Experiences ({ gradientToBl }: { gradientToBl: boolean }) {
       
       <div className='2xl:w-2/3 mx-auto'>
       {/* EXPERIENCE BUTTON */}
-        <div className="flex flex-row justify-center gap-x-2 md:gap-x-6 md:px-4">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-x-6 md:px-4">
           {dataButtonLanguage.map((value) => {
             return (
               <ExperienceButton
