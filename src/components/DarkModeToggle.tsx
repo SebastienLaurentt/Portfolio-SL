@@ -17,7 +17,7 @@ export default function ToggleButton() {
 
   return (
     <button aria-label="Set Light/Dark mode" onClick={toggleDarkMode}>
-      {darkMode ? <BsFillSunFill className="h-4 w-4 2xl:h-8 2xl:w-8"  color="yellow" /> : <BsFillMoonFill className="h-4 w-4 2xl:h-8 2xl:w-8" color="SteelBlue" />}
+      {darkMode ? <BsFillSunFill className="h-4 w-4 2xl:h-6 2xl:w-6"  color="yellow" /> : <BsFillMoonFill className="h-4 w-4 2xl:h-6 2xl:w-6" color="SteelBlue" />}
     </button>
   )
 }
