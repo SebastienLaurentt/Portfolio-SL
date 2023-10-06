@@ -48,7 +48,7 @@ function Projects ({ gradientToBl }: { gradientToBl: boolean }) {
             }
 
             {/* PROJECTS CONTENT (IN CARROUSEL) */}
-            <div className='lg:mt-24'>
+            <div className='xl:mt-24'>
                 <Carousel>
                     {dataLanguage.map((value) => {
                         return (

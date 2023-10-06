@@ -37,8 +37,8 @@ function Header() {
   }, [burgerIsOpen]);
 
     return (
-      <header className="flex justify-between items-center p-8 lg:py-16  xl:w-4/5 lg:mx-auto 2xl:w-2/3 ">
-        <div className="hidden lg:flex gap-x-1">
+      <header className="flex justify-between items-center p-8 xl:py-16  xl:w-4/5 xl:mx-auto 2xl:w-2/3 ">
+        <div className="hidden xl:flex gap-x-1">
             <span className="">SL - </span>
             <span className="font-bold text-emerald-500"> Web Developer</span>
         </div>
@@ -48,7 +48,7 @@ function Header() {
         burgerIsOpen={burgerIsOpen}
         gradientToBl={true}
       />
-        <ul className="hidden md:flex  gap-6 lg:gap-12  ">
+        <ul className="hidden md:flex  gap-6 xl:gap-12  ">
             {dataLanguage.map((value) => {
                 return (
                     <li className=''>
