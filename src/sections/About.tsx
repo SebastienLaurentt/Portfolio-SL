@@ -41,11 +41,11 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
                 </SectionHeader>
             }
             {/* ABOUT CONTENT */}
-            <div className="mt-12 lg:mt-16 lg:mx-auto lg:flex lg:flex-row-reverse lg:items-center lg:w-4/5 2xl:w-2/3 ">
+            <div className="mt-12 xl:mt-16 xl:mx-auto xl:flex xl:flex-row-reverse xl:items-center xl:w-4/5 2xl:w-2/3 ">
                 {/* ABOUT PICTURE */}
-                <div className="lg:w-1/3">
+                <div className="xl:w-1/3">
                     <div
-                        className={`bg-cover bg-center bg-no-repeat w-32 md:w-40 lg:w-60 2xl:w-80 h-32 md:h-40 lg:h-60 2xl:h-80 rounded-full mx-auto `}
+                        className={`bg-cover bg-center bg-no-repeat w-32 md:w-40 xl:w-60 2xl:w-80 h-32 md:h-40 xl:h-60 2xl:h-80 rounded-full mx-auto `}
                         style={{ backgroundImage: `url(/static/img/PhotoPerso.webp)` }}
                     /> 
                 </div>
@@ -54,7 +54,7 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
                 { 
                     englishLanguage ? 
                         
-                        <div className="p-4 md:p-8 text-center mt-8 lg:w-2/3">
+                        <div className="p-4 md:p-8 text-center mt-8 xl:w-2/3">
                             <p className="">
                                 Holder of a <strong className='text-emerald-500'>Ph.D. in Cognitive Sciences</strong>, my passion for innovation has led me to shape a unique professional trajectory. My journey began with an <strong className='text-emerald-500'>innovative thesis</strong>, followed by a position as a research associate in the field of <strong className='text-emerald-500'>cognitive sciences</strong>, which provided me with a solid understanding of the <strong className='text-emerald-500'>human brain</strong>.
                             </p>
@@ -70,7 +70,7 @@ function About ({ gradientToBl }: { gradientToBl: boolean }) {
 
                     :
 
-                    <div className="p-4 md:p-8 text-center mt-8 lg:w-2/3">
+                    <div className="p-4 md:p-8 text-center mt-8 xl:w-2/3">
                         <p className="">
                             Titulaire d'un <strong className='text-emerald-500'>doctorat en sciences cognitives</strong>, ma passion pour l'innovation m'a conduit à façonner un parcours professionnel unique. Mon voyage a commencé par une <strong className='text-emerald-500'>thèse innovante</strong>, suivie d'un poste de chercheur dans le domaine des <strong className='text-emerald-500'>sciences cognitives</strong>, ce qui m'a permis d'acquérir une solide compréhension du <strong className='text-emerald-500'>cerveau humain</strong>.
                         </p>

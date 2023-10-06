@@ -33,21 +33,22 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
     <Section 
       gradientToBl={gradientToBl}
       paddingBottom={true}
+      className='min-h-screen'
     >
       <Header />
 
       {/* HOME CONTENT */}
-      <div className="p-4 md:p-8 xl:px-16 xl:w-4/5 lg:mx-auto lg:flex lg:items-center 2xl:w-2/3 2xl:mt-12">
+      <div className="p-4 md:p-8 xl:px-16 xl:w-4/5 xl:mx-auto xl:flex xl:items-center 2xl:w-2/3 2xl:mt-12">
         {/* HERO  */}
-        <div className=" w-full xl:w-1/2 text-center xl:text-left mb-12 md:mb-20">
+        <div className=" w-full xl:w-2/3 text-center xl:text-left mb-12 md:mb-20">
           <h1 className=""> 
            {dataLanguage.opening}
           </h1>
-          <h2 className="mb-2 lg:text-left"> 
+          <h2 className="mb-2 xl:text-left"> 
             {dataLanguage.presentation}
           </h2>
           {/* SOCIAL ICON */}
-          <ul className='mb-4 flex gap-x-4 justify-center lg:justify-start'>
+          <ul className='mb-4 flex gap-x-4 justify-center xl:justify-start'>
             <li className=''>
               <a href="https://github.com/SebastienLaurentt" aria-label="See my GitHub profile" target="blank_">
                 <AiFillGithub   className='md:hover:fill-sky-700 h-8 w-8 md:h-10 md:w-10 2xl:h-12 2xl:w-12'/>
@@ -79,12 +80,12 @@ function Home ({ gradientToBl }: { gradientToBl: boolean }) {
         </div>
 
         {/* HOME LOGO */}
-        <div className='lg:w-2/3 lg:flex lg:justify-end'>
-          <img src={deskLogo} alt="" className="h-60 w-full lg:mx-0 md:h-96 lg:h-[32rem] 2xl:h-[40rem]" />
+        <div className=''>
+          <img src={deskLogo} alt="" className=" md:w-4/5 xl:w-4/5 mx-auto" />
         </div>
       </div>
       {/* SCROLL BOTTOM */}
-      <div className="text-center  md:mt-12 2xl:mt-32 animate-bounce">
+      <div className="text-center md:mt-4 xl:mt-12 2xl:mt-32 animate-bounce">
         <span className=""> Scroll </span>
         <div className="flex flex-row justify-center">
           <MdKeyboardDoubleArrowDown size={28} />
